@@ -7,7 +7,7 @@
  * CHANNEL OF GPIO DEVICES: is always 1 or 2;
  * OUTPUT/INPUT OF GPIO:    output 0        and Input: 0xFFFFFFFF
  */
-
+// Teste de fork
 // Includes
 #include "platform.h"           // Uart communication and caches
 #include "xil_printf.h"         // To print in console
