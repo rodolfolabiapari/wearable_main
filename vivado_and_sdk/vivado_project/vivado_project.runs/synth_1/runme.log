@@ -1,0 +1,652 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/digilent_ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1234.598 ; gain = 73.641 ; free physical = 2227 ; free virtual = 16630
+Command: synth_design -top design_1_wrapper -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6290 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1344.422 ; gain = 84.980 ; free physical = 2072 ; free virtual = 16479
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:50]
+INFO: [Synth 8-3491] module 'design_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:3111' bound to instance 'design_1_i' of component 'design_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:3173]
+INFO: [Synth 8-3491] module 'design_1_PmodBLE_0_0' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_PmodBLE_0_0_stub.vhdl:5' bound to instance 'PmodBLE_0' of component 'design_1_PmodBLE_0_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4252]
+INFO: [Synth 8-638] synthesizing module 'design_1_PmodBLE_0_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_PmodBLE_0_0_stub.vhdl:72]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_4' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_gpio_0_4_stub.vhdl:5' bound to instance 'axi_gpio_led_switch' of component 'design_1_axi_gpio_0_4' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4316]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_4' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_gpio_0_4_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_3' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_gpio_0_3_stub.vhdl:5' bound to instance 'axi_gpio_shield' of component 'design_1_axi_gpio_0_3' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_3' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_gpio_0_3_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_smc_0_stub.vhdl:5' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4371]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_smc_0_stub.vhdl:128]
+INFO: [Synth 8-3491] module 'design_1_axi_timer_0_0' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_timer_0_0_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4491]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_timer_0_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_uartlite_0_1_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4520]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_axi_uartlite_0_1_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_clk_wiz_0_1_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4545]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_clk_wiz_0_1_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_mdm_1_1_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4554]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_mdm_1_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4567]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_microblaze_0_1_stub.vhdl:137]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4727]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:1815]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (1#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (2#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (3#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:360]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (4#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:360]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:461]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (5#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:461]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:562]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (6#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:562]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_4YOIXL' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:663]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_4YOIXL' (7#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:663]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1YO2N20' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:768]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1YO2N20' (8#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:768]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_2FYR80' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:879]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_2FYR80' (9#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:879]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:1548]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (10#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:1548]
+INFO: [Synth 8-3491] module 'design_1_xbar_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:2857]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_xbar_1_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_1' (11#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:1815]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:969]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:1183]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:1237]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_dlmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:1265]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:1319]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_ilmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:1347]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_lmb_bram_1_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (12#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:969]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_microblaze_0_xlconcat_1_stub.vhdl:5' bound to instance 'microblaze_0_xlconcat' of component 'design_1_microblaze_0_xlconcat_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4981]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_microblaze_0_xlconcat_1_stub.vhdl:17]
+WARNING: [Synth 8-5640] Port 'app_sr_active' is missing in component declaration [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:3174]
+WARNING: [Synth 8-5640] Port 'app_ref_ack' is missing in component declaration [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:3174]
+WARNING: [Synth 8-5640] Port 'app_zq_ack' is missing in component declaration [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:3174]
+WARNING: [Synth 8-5640] Port 'device_temp' is missing in component declaration [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:3174]
+INFO: [Synth 8-3491] module 'design_1_mig_7series_0_0' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_mig_7series_0_0_stub.vhdl:5' bound to instance 'mig_7series_0' of component 'design_1_mig_7series_0_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:4990]
+INFO: [Synth 8-638] synthesizing module 'design_1_mig_7series_0_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_mig_7series_0_0_stub.vhdl:75]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_100M_1' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_rst_clk_wiz_0_100M_1_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_100M_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:5053]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_1' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_rst_clk_wiz_0_100M_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_rst_mig_7series_0_83M_0' declared at '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_rst_mig_7series_0_83M_0_stub.vhdl:5' bound to instance 'rst_mig_7series_0_83M' of component 'design_1_rst_mig_7series_0_83M_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:5066]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_mig_7series_0_83M_0' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/realtime/design_1_rst_mig_7series_0_83M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (13#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/synth/design_1.vhd:3173]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'ja_pin10_iobuf' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:468]
+INFO: [Synth 8-638] synthesizing module 'IOBUF' [/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IOBUF' (14#1) [/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'ja_pin1_iobuf' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:475]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'ja_pin2_iobuf' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:482]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'ja_pin3_iobuf' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:489]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'ja_pin4_iobuf' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:496]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'ja_pin7_iobuf' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:503]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'ja_pin8_iobuf' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:510]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'ja_pin9_iobuf' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:517]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'led_4bits_tri_iobuf_0' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:524]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'led_4bits_tri_iobuf_1' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:531]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'led_4bits_tri_iobuf_2' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:538]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'led_4bits_tri_iobuf_3' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:545]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_0' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:552]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_1' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:559]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_10' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:566]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_11' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:573]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_12' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:580]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_13' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:587]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_14' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:594]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_15' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:601]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_16' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:608]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_17' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:615]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_18' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:622]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_19' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:629]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_2' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:636]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_3' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:643]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_4' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:650]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_5' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:657]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_6' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:664]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_7' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:671]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_8' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:678]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp0_dp19_tri_iobuf_9' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:685]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_0' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:692]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_1' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:699]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_10' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:706]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_11' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:713]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_12' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:720]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_13' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:727]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_14' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:734]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_15' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:741]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_2' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:748]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_3' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:755]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_4' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:762]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_5' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:769]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_6' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:776]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_7' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:783]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_8' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:790]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'shield_dp26_dp41_tri_iobuf_9' of component 'IOBUF' [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:797]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (15#1) [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:50]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m08_couplers_imp_2FYR80 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m08_couplers_imp_2FYR80 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m08_couplers_imp_2FYR80 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m08_couplers_imp_2FYR80 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m07_couplers_imp_1YO2N20 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m07_couplers_imp_1YO2N20 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m07_couplers_imp_1YO2N20 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m07_couplers_imp_1YO2N20 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1392.953 ; gain = 133.512 ; free physical = 2075 ; free virtual = 16483
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1392.953 ; gain = 133.512 ; free physical = 2076 ; free virtual = 16484
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp20/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp20/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc] for cell 'design_1_i/mig_7series_0'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc] for cell 'design_1_i/mig_7series_0'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp22/design_1_axi_gpio_0_3_in_context.xdc] for cell 'design_1_i/axi_gpio_shield'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp22/design_1_axi_gpio_0_3_in_context.xdc] for cell 'design_1_i/axi_gpio_shield'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp23/design_1_axi_gpio_0_4_in_context.xdc] for cell 'design_1_i/axi_gpio_led_switch'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp23/design_1_axi_gpio_0_4_in_context.xdc] for cell 'design_1_i/axi_gpio_led_switch'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp24/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp24/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp25/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp25/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp26/design_1_microblaze_0_axi_intc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp26/design_1_microblaze_0_axi_intc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp27/design_1_microblaze_0_xlconcat_1_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp27/design_1_microblaze_0_xlconcat_1_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp28/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp28/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp29/design_1_rst_clk_wiz_0_100M_1_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp29/design_1_rst_clk_wiz_0_100M_1_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp30/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp30/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp31/design_1_rst_mig_7series_0_83M_0_in_context.xdc] for cell 'design_1_i/rst_mig_7series_0_83M'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp31/design_1_rst_mig_7series_0_83M_0_in_context.xdc] for cell 'design_1_i/rst_mig_7series_0_83M'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp32/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp32/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp33/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp33/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp34/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp34/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp35/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp35/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp36/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp36/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp37/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp37/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp38/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/axi_timer_0'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp38/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/axi_timer_0'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp39/design_1_PmodBLE_0_0_in_context.xdc] for cell 'design_1_i/PmodBLE_0'
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp39/design_1_PmodBLE_0_0_in_context.xdc] for cell 'design_1_i/PmodBLE_0'
+Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 48 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1690.336 ; gain = 0.000 ; free physical = 1775 ; free virtual = 16183
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1837 ; free virtual = 16245
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1837 ; free virtual = 16245
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp20/design_1_clk_wiz_0_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp20/design_1_clk_wiz_0_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[10]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[10]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[11]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[11]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[12]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[12]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[13]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[13]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[2]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[2]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[3]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[3]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[4]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[4]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[5]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[5]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[6]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[6]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[7]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[7]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[8]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[8]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[9]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[9]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ba[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ba[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ba[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ba[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ba[2]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ba[2]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_cas_n. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_cas_n. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ck_n[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ck_n[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ck_p[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ck_p[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_cke[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_cke[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_cs_n[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_cs_n[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dm[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dm[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dm[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dm[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[10]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[10]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[11]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[11]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[12]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[12]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[13]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[13]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[14]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[14]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[15]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[15]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[2]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[2]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[3]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[3]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[4]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[4]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[5]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[5]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[6]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[6]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[7]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[7]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[8]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[8]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[9]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[9]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[1]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_odt[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_odt[0]. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ras_n. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ras_n. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_reset_n. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_reset_n. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_we_n. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_we_n. (constraint file  /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/.Xil/Vivado-6271-c3po/dcp21/design_1_mig_7series_0_0_in_context.xdc, line 97).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/PmodBLE_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_led_switch. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_shield. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_smc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mig_7series_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_mig_7series_0_83M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1836 ; free virtual = 16245
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1838 ; free virtual = 16246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M04_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M04_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M05_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M05_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M06_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M06_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M07_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M07_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M08_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port M08_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1837 ; free virtual = 16246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out1' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out2' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out3' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mig_7series_0/ui_clk' to pin 'design_1_i/mig_7series_0/bbstub_ui_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Clk_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Update_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5819] Moved 8 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:01:05 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1714 ; free virtual = 16122
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:05 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1714 ; free virtual = 16121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:05 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1713 ; free virtual = 16121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1705 ; free virtual = 16113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1705 ; free virtual = 16113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1705 ; free virtual = 16113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1705 ; free virtual = 16113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1705 ; free virtual = 16113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1705 ; free virtual = 16113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |design_1_xbar_1                  |         1|
+|2     |design_1_PmodBLE_0_0             |         1|
+|3     |design_1_axi_gpio_0_4            |         1|
+|4     |design_1_axi_gpio_0_3            |         1|
+|5     |design_1_axi_smc_0               |         1|
+|6     |design_1_axi_timer_0_0           |         1|
+|7     |design_1_axi_uartlite_0_1        |         1|
+|8     |design_1_clk_wiz_0_1             |         1|
+|9     |design_1_mdm_1_1                 |         1|
+|10    |design_1_microblaze_0_1          |         1|
+|11    |design_1_microblaze_0_axi_intc_1 |         1|
+|12    |design_1_microblaze_0_xlconcat_1 |         1|
+|13    |design_1_mig_7series_0_0         |         1|
+|14    |design_1_rst_clk_wiz_0_100M_1    |         1|
+|15    |design_1_rst_mig_7series_0_83M_0 |         1|
+|16    |design_1_dlmb_bram_if_cntlr_1    |         1|
+|17    |design_1_dlmb_v10_1              |         1|
+|18    |design_1_ilmb_bram_if_cntlr_1    |         1|
+|19    |design_1_ilmb_v10_1              |         1|
+|20    |design_1_lmb_bram_1              |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------------+------+
+|      |Cell                                     |Count |
++------+-----------------------------------------+------+
+|1     |design_1_PmodBLE_0_0_bbox_0              |     1|
+|2     |design_1_axi_gpio_0_3_bbox_2             |     1|
+|3     |design_1_axi_gpio_0_4_bbox_1             |     1|
+|4     |design_1_axi_smc_0_bbox_3                |     1|
+|5     |design_1_axi_timer_0_0_bbox_4            |     1|
+|6     |design_1_axi_uartlite_0_1_bbox_5         |     1|
+|7     |design_1_clk_wiz_0_1_bbox_6              |     1|
+|8     |design_1_dlmb_bram_if_cntlr_1_bbox_11    |     1|
+|9     |design_1_dlmb_v10_1_bbox_12              |     1|
+|10    |design_1_ilmb_bram_if_cntlr_1_bbox_13    |     1|
+|11    |design_1_ilmb_v10_1_bbox_14              |     1|
+|12    |design_1_lmb_bram_1_bbox_15              |     1|
+|13    |design_1_mdm_1_1_bbox_7                  |     1|
+|14    |design_1_microblaze_0_1_bbox_8           |     1|
+|15    |design_1_microblaze_0_axi_intc_1_bbox_9  |     1|
+|16    |design_1_microblaze_0_xlconcat_1_bbox_16 |     1|
+|17    |design_1_mig_7series_0_0_bbox_17         |     1|
+|18    |design_1_rst_clk_wiz_0_100M_1_bbox_18    |     1|
+|19    |design_1_rst_mig_7series_0_83M_0_bbox_19 |     1|
+|20    |design_1_xbar_1_bbox_10                  |     1|
+|21    |IBUF                                     |     6|
+|22    |IOBUF                                    |    48|
+|23    |OBUF                                     |     1|
++------+-----------------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  3155|
+|2     |  design_1_i                  |design_1                              |  3100|
+|3     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_1    |  1040|
+|4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1690.336 ; gain = 430.895 ; free physical = 1705 ; free virtual = 16113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1690.336 ; gain = 133.512 ; free physical = 1756 ; free virtual = 16163
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1690.344 ; gain = 430.895 ; free physical = 1763 ; free virtual = 16171
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 48 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+144 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:10 . Memory (MB): peak = 1690.344 ; gain = 455.746 ; free physical = 1744 ; free virtual = 16151
+INFO: [Common 17-1381] The checkpoint '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1690.344 ; gain = 0.000 ; free physical = 1744 ; free virtual = 16151
+INFO: [Common 17-206] Exiting Vivado at Fri May  4 11:43:35 2018...
