@@ -90,10 +90,10 @@ int main (void)
 
     // States variables
     u8 status;
-    float distance[QUANT_SENSORS * (SIZE_CIRCLE_VEC)], avg[QUANT_SENSORS], variance[QUANT_SENSORS], sd[QUANT_SENSORS], safety_distance = 30.0;
+    float distance[QUANT_SENSORS][SIZE_CIRCLE_VEC], avg[QUANT_SENSORS], variance[QUANT_SENSORS], sd[QUANT_SENSORS], safety_distance = 30.0;
     // state that the user is
     char situation = 0;
-    char pos_circle_vec = 0;
+    int pos_circle_vec = 0;
 
     // Leds register u8 reg_leds = 0; 
     // Initialize the GPIO devices.
