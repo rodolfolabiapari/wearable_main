@@ -12,7 +12,7 @@ key = 1
 
 def read_char():
 	info = rf.read()
-	#print info
+	print info
 	return info
 
 def read_float():
@@ -43,8 +43,13 @@ def listen():
                         variances = []
                         sds       = []
 			for i in range(0, quant_sensors):
-				distances.append(read_)
+				distance = '0'
+				number = read_char()
+				while (number != 'e'):
+					distance += number
+					number = read_char()
 				write_char('1')
+				distances.append(distance)
 
                                 variance = '0'
 				number = read_char()

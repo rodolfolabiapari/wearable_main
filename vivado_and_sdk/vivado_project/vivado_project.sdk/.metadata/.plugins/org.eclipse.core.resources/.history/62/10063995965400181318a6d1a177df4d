@@ -1,0 +1,113 @@
+
+#include "distance_functions.h"
+
+
+
+u32 request_pulse_hcsr04_sensor(XGpio * gpio_in) {
+
+    XTmrCtr TimerCounter;                 // Struct to count the time
+    u8 status = 0;                        // Function's Status verification
+    const u16 DeviceID = 0;               // Id of time device
+
+    // Initialize the time structure
+    status = XTmrCtr_Initialize(&TimerCounter, DeviceID);
+    // If failure, end the application
+    if (status != SUCCESS)
+        return FAILURE;
+
+    // Does the trigger on HC-SR04 trigg pin
+    XGpio_DiscreteSet(gpio_in, CHANNEL_GPIO_00_to_19, MASK_HCSR04_OUTPUT);
+
+    usleep(5);
+
+    XGpio_DiscreteClear(gpio_in, CHANNEL_GPIO_00_to_19, MASK_HCSR04_OUTPUT);
+
+    // Waits for the response of up edge
+    while ((XGpio_DiscreteRead(gpio_in, CHANNEL_GPIO_00_to_19) & MASK_HCSR04_INPUT) == 0);
+
+    XTmrCtr_Start(&TimerCounter, TIMER_COUNTER_0);
+
+    // Waits the down edge, when tells the pulse ended and stop the timer
+    while ((XGpio_DiscreteRead(gpio_in, CHANNEL_GPIO_00_to_19) & MASK_HCSR04_INPUT) != 0) {
+    	// Geth the value of time measured
+
+    	if (XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0) > MAX_PULSE)
+    		return MAX_PULSE;
+    }
+
+
+    // Stops the pulse calculation
+    XTmrCtr_Stop(&TimerCounter, TIMER_COUNTER_0);
+
+    // Geth the value of time measured
+    return XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+}
+
+void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd)
+{
+    float sum0 = 0, sum1 = 0, sum2 = 0;
+    int i = 0;
+    int pos = pos_end;
+
+    // Searches for the max and min values
+    for (i = 0; i < TIMES_MEASURES; i++) {
+        if (pos < 0) 
+            pos = SIZE_CIRCLE_VEC - 1;
+
+        sum0 += v[0][pos];
+        sum1 += v[1][pos];
+        sum2 += v[2][pos--];
+    }
+
+    // Calcules the avg
+    avg[0] = sum0 / (TIMES_MEASURES);
+    avg[1] = sum1 / (TIMES_MEASURES);
+    avg[2] = sum2 / (TIMES_MEASURES);
+
+    pos = pos_end;
+     // Variances
+    for (i = 0; i < TIMES_MEASURES; i++) {
+        if (pos < 0)
+            pos = SIZE_CIRCLE_VEC - 1;
+        variance[0] += (v[0][pos] - avg[0]) * (v[0][pos] - avg[0]);
+        variance[1] += (v[1][pos] - avg[1]) * (v[1][pos] - avg[1]);
+        variance[2] += (v[2][pos] - avg[2]) * (v[2][pos] - avg[2]);
+    }
+
+    variance[0] /= TIMES_MEASURES - 1;
+    variance[1] /= TIMES_MEASURES - 1;
+    variance[2] /= TIMES_MEASURES - 1;
+
+    sd[0] = sqrt(variance[0]);
+    sd[1] = sqrt(variance[1]);
+    sd[2] = sqrt(variance[2]);
+}
+
+
+/*
+ * Procedure that measures the distance usint a average of times_measures times.
+ * It returns a average of distance's read.
+ *
+ * @param: gpio_in: gpio structure.
+ * @param: times_measures: times of numbers of average.
+ * @return: average of distance measured.
+ */
+void measure_distance (XGpio *gpio_in, float dist[QUANT_SENSORS][SIZE_CIRCLE_VEC], int * pos, float * avg, float * variance, float * sd)
+{
+    float avg_buffer = 0;
+    int i = 0, turn, which_sensor = 0;
+
+    for (i = 0; i < TIMES_MEASURES; i++) {
+         dist[0][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+         dist[1][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+         dist[2][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+
+         (*pos)++;
+         if (*pos >= SIZE_CIRCLE_VEC)
+             *pos = 0;
+    }
+
+
+
+
+}

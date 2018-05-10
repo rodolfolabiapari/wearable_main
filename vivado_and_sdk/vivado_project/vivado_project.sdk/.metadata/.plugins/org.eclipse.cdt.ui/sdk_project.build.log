@@ -1,6 +1,6 @@
-11:57:55 **** Incremental Build of configuration Debug for project sdk_project ****
+20:28:24 **** Incremental Build of configuration Debug for project sdk_project ****
 make all 
 make: Nothing to be done for 'all'.
 
-11:57:55 Build Finished (took 178ms)
+20:28:24 Build Finished (took 143ms)
 

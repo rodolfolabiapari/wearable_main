@@ -192,3 +192,2459 @@ Finished building: sdk_project.elf.size
 11:57:55 **** Incremental Build of configuration Debug for project sdk_project ****
 make all 
 make: Nothing to be done for 'all'.
+16:59:58 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:46:6: error: conflicting types for 'calcule_stats'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:41:6: note: previous declaration of 'calcule_stats' was here
+ void calcule_stats(float v[TIMES_MEASURES], float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~
+../src/distance_functions.c: In function 'calcule_stats':
+../src/distance_functions.c:71:19: error: 'SIZE_CIRCLE_VET' undeclared (first use in this function); did you mean 'SIZE_CIRCLE_VEC'?
+             pos = SIZE_CIRCLE_VET - 1;
+                   ^~~~~~~~~~~~~~~
+                   SIZE_CIRCLE_VEC
+../src/distance_functions.c:71:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:106:22: error: 'SIZE_CIRCLE_VET' undeclared (first use in this function); did you mean 'SIZE_CIRCLE_VEC'?
+          if (*pos >= SIZE_CIRCLE_VET)
+                      ^~~~~~~~~~~~~~~
+                      SIZE_CIRCLE_VEC
+../src/distance_functions.c:118:21: error: 'buffer' undeclared (first use in this function); did you mean 'mffsr'?
+                     buffer[turn] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                     ^~~~~~
+                     mffsr
+../src/distance_functions.c:135:31: warning: passing argument 2 of 'calcule_stats' makes integer from pointer without a cast [-Wint-conversion]
+         calcule_stats(buffer, &avg_buffer, variance, sd);
+                               ^
+../src/distance_functions.c:46:6: note: expected 'int' but argument is of type 'float *'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+../src/distance_functions.c:135:9: error: too few arguments to function 'calcule_stats'
+         calcule_stats(buffer, &avg_buffer, variance, sd);
+         ^~~~~~~~~~~~~
+../src/distance_functions.c:46:6: note: declared here
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+make: *** [src/distance_functions.o] Error 1
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+17:00:11 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:46:6: error: conflicting types for 'calcule_stats'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:41:6: note: previous declaration of 'calcule_stats' was here
+ void calcule_stats(float v[TIMES_MEASURES], float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:118:21: error: 'buffer' undeclared (first use in this function); did you mean 'mffsr'?
+                     buffer[turn] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+                     ^~~~~~
+                     mffsr
+../src/distance_functions.c:118:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/distance_functions.c:135:31: warning: passing argument 2 of 'calcule_stats' makes integer from pointer without a cast [-Wint-conversion]
+         calcule_stats(buffer, &avg_buffer, variance, sd);
+                               ^
+../src/distance_functions.c:46:6: note: expected 'int' but argument is of type 'float *'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+../src/distance_functions.c:135:9: error: too few arguments to function 'calcule_stats'
+         calcule_stats(buffer, &avg_buffer, variance, sd);
+         ^~~~~~~~~~~~~
+../src/distance_functions.c:46:6: note: declared here
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+make: *** [src/distance_functions.o] Error 1
+17:00:27 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:46:6: error: conflicting types for 'calcule_stats'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:41:6: note: previous declaration of 'calcule_stats' was here
+ void calcule_stats(float v[TIMES_MEASURES], float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+make: *** [src/distance_functions.o] Error 1
+17:00:58 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+Finished building: ../src/distance_functions.c
+ 
+Building file: ../src/leds_switchs_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/leds_switchs_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/leds_switchs_functions.d" -MT"src/leds_switchs_functions.o" -o "src/leds_switchs_functions.o" "../src/leds_switchs_functions.c"
+Finished building: ../src/leds_switchs_functions.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:121:44: error: 'reg_leds' undeclared (first use in this function); did you mean 'leds'?
+     while (is_device_on(&gpio_led_switch, &reg_leds) == DEVICE_OFF)
+                                            ^~~~~~~~
+                                            leds
+../src/main.c:121:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:140:45: warning: passing argument 2 of 'measure_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
+                                             ^~~~~~~~
+In file included from ../src/main.c:21:0:
+../src/distance_functions.h:61:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+src/subdir.mk:33: recipe for target 'src/main.o' failed
+      ^~~~~~~~~~~~~~~~
+../src/main.c:143:40: warning: passing argument 1 of 'send_distance_ble' from incompatible pointer type [-Wincompatible-pointer-types]
+             status = send_distance_ble(distance, variance, sd);
+                                        ^~~~~~~~
+In file included from ../src/main.c:20:0:
+../src/ble_functions.h:40:6: note: expected 'float *' but argument is of type 'float (*)[90]'
+ char send_distance_ble (float *distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:151:48: warning: passing argument 1 of 'verify_safety_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             situation = verify_safety_distance(distance, safety_distance);
+                                                ^~~~~~~~
+../src/main.c:38:6: note: expected 'float *' but argument is of type 'float (*)[90]'
+ char verify_safety_distance (float *current_distance, float safety_distance)
+      ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+17:02:22 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:142:45: warning: passing argument 2 of 'measure_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
+                                             ^~~~~~~~
+In file included from ../src/main.c:21:0:
+../src/distance_functions.h:61:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~~~~
+../src/main.c:145:40: warning: passing argument 1 of 'send_distance_ble' from incompatible pointer type [-Wincompatible-pointer-types]
+             status = send_distance_ble(distance, variance, sd);
+                                        ^~~~~~~~
+In file included from ../src/main.c:20:0:
+../src/ble_functions.h:40:6: note: expected 'float *' but argument is of type 'float (*)[90]'
+ char send_distance_ble (float *distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:153:48: warning: passing argument 1 of 'verify_safety_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             situation = verify_safety_distance(distance, safety_distance);
+                                                ^~~~~~~~
+../src/main.c:38:6: note: expected 'float *' but argument is of type 'float (*)[90]'
+ char verify_safety_distance (float *current_distance, float safety_distance)
+      ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95728	   1560	   3360	 100648	  18928	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+17:03:23 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:95:46: error: array type has incomplete element type 'float[]'
+ void measure_distance (XGpio *gpio_in, float dist[][], int * pos, float * avg, float * variance, float * sd)
+                                              ^~~~
+../src/distance_functions.c:95:46: note: declaration of 'dist' as multidimensional array must have bounds for all dimensions except the first
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+make: *** [src/distance_functions.o] Error 1
+17:03:33 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:61:46: error: array type has incomplete element type 'float[]'
+ void measure_distance (XGpio *gpio_in, float dist[][], int * pos_circle_vec, float * avg, float * variance, float * sd);
+                                              ^~~~
+../src/distance_functions.h:61:46: note: declaration of 'dist' as multidimensional array must have bounds for all dimensions except the first
+../src/distance_functions.c:95:46: error: array type has incomplete element type 'float[]'
+ void measure_distance (XGpio *gpio_in, float dist[][], int * pos, float * avg, float * variance, float * sd)
+                                              ^~~~
+../src/distance_functions.c:95:46: note: declaration of 'dist' as multidimensional array must have bounds for all dimensions except the first
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+make: *** [src/distance_functions.o] Error 1
+17:04:16 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:61:46: error: array type has incomplete element type 'float[]'
+ void measure_distance (XGpio *gpio_in, float dist[][], int * pos_circle_vec, float * avg, float * variance, float * sd);
+                                              ^~~~
+../src/distance_functions.h:61:46: note: declaration of 'dist' as multidimensional array must have bounds for all dimensions except the first
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+make: *** [src/distance_functions.o] Error 1
+17:04:22 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+Finished building: ../src/distance_functions.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:142:45: warning: passing argument 2 of 'measure_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
+                                             ^~~~~~~~
+In file included from ../src/main.c:21:0:
+../src/distance_functions.h:61:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~~~~
+../src/main.c:145:40: warning: passing argument 1 of 'send_distance_ble' from incompatible pointer type [-Wincompatible-pointer-types]
+             status = send_distance_ble(distance, variance, sd);
+                                        ^~~~~~~~
+In file included from ../src/main.c:20:0:
+../src/ble_functions.h:40:6: note: expected 'float *' but argument is of type 'float (*)[90]'
+ char send_distance_ble (float *distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:153:48: warning: passing argument 1 of 'verify_safety_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             situation = verify_safety_distance(distance, safety_distance);
+                                                ^~~~~~~~
+../src/main.c:38:6: note: expected 'float *' but argument is of type 'float (*)[90]'
+ char verify_safety_distance (float *current_distance, float safety_distance)
+      ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95728	   1560	   3360	 100648	  18928	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+17:09:43 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c:105:6: error: conflicting types for 'send_distance_ble'
+ char send_distance_ble (float **distance, float *variance, float *sd)
+      ^~~~~~~~~~~~~~~~~
+In file included from ../src/ble_functions.c:1:0:
+../src/ble_functions.h:40:6: note: previous declaration of 'send_distance_ble' was here
+ char send_distance_ble (float *distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+src/subdir.mk:33: recipe for target 'src/ble_functions.o' failed
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:126:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:126:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:126:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/ble_functions.c:126:40: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+                                   ~~~~~^   ~~~~~~~~~~~
+../src/ble_functions.c:154:40: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+                                   ~~~~~^   ~~~~~~~~~~~
+make: *** [src/ble_functions.o] Error 1
+17:09:47 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:126:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:126:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:126:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/ble_functions.c:126:40: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+                                   ~~~~~^   ~~~~~~~~~~~
+../src/ble_functions.c:154:40: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+                                   ~~~~~^   ~~~~~~~~~~~
+Finished building: ../src/ble_functions.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:142:45: warning: passing argument 2 of 'measure_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
+                                             ^~~~~~~~
+In file included from ../src/main.c:21:0:
+../src/distance_functions.h:61:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~~~~
+../src/main.c:145:40: warning: passing argument 1 of 'send_distance_ble' from incompatible pointer type [-Wincompatible-pointer-types]
+             status = send_distance_ble(distance, variance, sd);
+                                        ^~~~~~~~
+In file included from ../src/main.c:20:0:
+../src/ble_functions.h:40:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ char send_distance_ble (float **distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:153:48: warning: passing argument 1 of 'verify_safety_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             situation = verify_safety_distance(distance, safety_distance);
+                                                ^~~~~~~~
+../src/main.c:38:6: note: expected 'float *' but argument is of type 'float (*)[90]'
+ char verify_safety_distance (float *current_distance, float safety_distance)
+      ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95640	   1560	   3360	 100560	  188d0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+17:11:28 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'verify_safety_distance':
+../src/main.c:44:33: error: invalid operands to binary > (have 'float *' and 'float')
+         if (current_distance[i] > safety_distance) {
+             ~~~~~~~~~~~~~~~~~~~ ^
+../src/main.c: In function 'main':
+../src/main.c:142:45: warning: passing argument 2 of 'measure_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
+                                             ^~~~~~~~
+In file included from ../src/main.c:21:0:
+../src/distance_functions.h:61:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~~~~
+../src/main.c:145:40: warning: passing argument 1 of 'send_distance_ble' from incompatible pointer type [-Wincompatible-pointer-types]
+             status = send_distance_ble(distance, variance, sd);
+                                        ^~~~~~~~
+In file included from ../src/main.c:20:0:
+../src/ble_functions.h:40:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+src/subdir.mk:33: recipe for target 'src/main.o' failed
+ char send_distance_ble (float **distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:153:48: warning: passing argument 1 of 'verify_safety_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             situation = verify_safety_distance(distance, safety_distance);
+                                                ^~~~~~~~
+../src/main.c:38:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ char verify_safety_distance (float **current_distance, float safety_distance)
+      ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+17:12:07 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:142:45: warning: passing argument 2 of 'measure_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
+                                             ^~~~~~~~
+In file included from ../src/main.c:21:0:
+../src/distance_functions.h:61:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~~~~
+../src/main.c:145:40: warning: passing argument 1 of 'send_distance_ble' from incompatible pointer type [-Wincompatible-pointer-types]
+             status = send_distance_ble(distance, variance, sd);
+                                        ^~~~~~~~
+In file included from ../src/main.c:20:0:
+../src/ble_functions.h:40:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ char send_distance_ble (float **distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:153:48: warning: passing argument 1 of 'verify_safety_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             situation = verify_safety_distance(distance, safety_distance);
+                                                ^~~~~~~~
+../src/main.c:38:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ char verify_safety_distance (float **current_distance, int pos, float safety_distance)
+      ^~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:153:25: error: too few arguments to function 'verify_safety_distance'
+             situation = verify_safety_distance(distance, safety_distance);
+                         ^~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:38:6: note: declared here
+ char verify_safety_distance (float **current_distance, int pos, float safety_distance)
+      ^~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:33: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:12:33 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:142:45: warning: passing argument 2 of 'measure_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
+                                             ^~~~~~~~
+In file included from ../src/main.c:21:0:
+../src/distance_functions.h:61:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~~~~
+../src/main.c:145:40: warning: passing argument 1 of 'send_distance_ble' from incompatible pointer type [-Wincompatible-pointer-types]
+             status = send_distance_ble(distance, variance, sd);
+                                        ^~~~~~~~
+In file included from ../src/main.c:20:0:
+../src/ble_functions.h:40:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ char send_distance_ble (float **distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:153:48: warning: passing argument 1 of 'verify_safety_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             situation = verify_safety_distance(distance, pos_circle_vec, safety_distance);
+                                                ^~~~~~~~
+../src/main.c:38:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ char verify_safety_distance (float **current_distance, int pos, float safety_distance)
+      ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95672	   1560	   3360	 100592	  188f0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+17:50:59 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:142:45: warning: passing argument 2 of 'measure_distance' from incompatible pointer type [-Wincompatible-pointer-types]
+             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
+                                             ^~~~~~~~
+In file included from ../src/main.c:21:0:
+../src/distance_functions.h:61:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~~~~
+../src/main.c:145:40: warning: passing argument 1 of 'send_distance_ble' from incompatible pointer type [-Wincompatible-pointer-types]
+             status = send_distance_ble(distance, variance, sd);
+                                        ^~~~~~~~
+In file included from ../src/main.c:20:0:
+../src/ble_functions.h:40:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ char send_distance_ble (float **distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95708	   1560	   3364	 100632	  18918	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+18:07:44 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:95:6: error: conflicting types for 'measure_distance'
+ void measure_distance (XGpio *gpio_in, float dist[QUANT_SENSORS][SIZE_CIRCLE_VEC], int * pos, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~~~~
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:61:6: note: previous declaration of 'measure_distance' was here
+ void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~~~~
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+make: *** [src/distance_functions.o] Error 1
+18:07:51 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+Finished building: ../src/distance_functions.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:145:40: warning: passing argument 1 of 'send_distance_ble' from incompatible pointer type [-Wincompatible-pointer-types]
+             status = send_distance_ble(distance, variance, sd);
+                                        ^~~~~~~~
+In file included from ../src/main.c:20:0:
+../src/ble_functions.h:40:6: note: expected 'float **' but argument is of type 'float (*)[90]'
+ char send_distance_ble (float **distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95692	   1560	   3364	 100616	  18908	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+18:07:59 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:46:6: error: conflicting types for 'calcule_stats'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:41:6: note: previous declaration of 'calcule_stats' was here
+ void calcule_stats(float dist[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+make: *** [src/distance_functions.o] Error 1
+18:08:01 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:46:6: error: conflicting types for 'calcule_stats'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:41:6: note: previous declaration of 'calcule_stats' was here
+ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+make: *** [src/distance_functions.o] Error 1
+18:08:23 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c:105:6: error: conflicting types for 'send_distance_ble'
+ char send_distance_ble (float  dist[QUANT_SENSORS][SIZE_CIRCLE_VEC], float *variance, float *sd)
+      ^~~~~~~~~~~~~~~~~
+In file included from ../src/ble_functions.c:1:0:
+../src/ble_functions.h:40:6: note: previous declaration of 'send_distance_ble' was here
+ char send_distance_ble (float **distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:122:41: error: 'distance' undeclared (first use in this function); did you mean 'variance'?
+      xil_printf("Distance: %d\n", (int) distance[i]);
+                                         ^~~~~~~~
+                                         variance
+../src/ble_functions.c:122:41: note: each undeclared identifier is reported only once for each function it appears in
+../src/ble_functions.c:126:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:126:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:126:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+src/subdir.mk:33: recipe for target 'src/ble_functions.o' failed
+make: *** [src/ble_functions.o] Error 1
+18:08:29 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c:105:6: error: conflicting types for 'send_distance_ble'
+ char send_distance_ble (float  distance[QUANT_SENSORS][SIZE_CIRCLE_VEC], float *variance, float *sd)
+      ^~~~~~~~~~~~~~~~~
+In file included from ../src/ble_functions.c:1:0:
+../src/ble_functions.h:40:6: note: previous declaration of 'send_distance_ble' was here
+ char send_distance_ble (float **distance, float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:126:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:126:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:126:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/ble_functions.c:126:40: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+                                   ~~~~~^           ~
+../src/ble_functions.c:154:40: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+                                   ~~~~~^           ~
+make: *** [src/ble_functions.o] Error 1
+src/subdir.mk:33: recipe for target 'src/ble_functions.o' failed
+18:08:45 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:126:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:126:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:126:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/ble_functions.c:126:40: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+                                   ~~~~~^           ~
+../src/ble_functions.c:154:40: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+                                   ~~~~~^           ~
+Finished building: ../src/ble_functions.c
+ 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:46:6: error: conflicting types for 'calcule_stats'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:41:6: note: previous declaration of 'calcule_stats' was here
+ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+make: *** [src/distance_functions.o] Error 1
+18:09:01 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:120:5: error: 'todo' undeclared (first use in this function)
+     todo
+     ^~~~
+../src/ble_functions.c:120:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/ble_functions.c:122:5: error: expected ';' before 'for'
+     for (i = 0; i < QUANT_SENSORS; i++) {
+     ^~~
+../src/ble_functions.c:109:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+../src/ble_functions.c:108:8: warning: unused variable 'buffer' [-Wunused-variable]
+     u8 buffer [TAM_BUFFER];
+        ^~~~~~
+src/subdir.mk:33: recipe for target 'src/ble_functions.o' failed
+../src/ble_functions.c:167:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ble_functions.o] Error 1
+18:09:33 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c:105:6: error: conflicting types for 'send_distance_ble'
+ char send_distance_ble (float *distance, float *variance, float *sd)
+      ^~~~~~~~~~~~~~~~~
+In file included from ../src/ble_functions.c:1:0:
+../src/ble_functions.h:40:6: note: previous declaration of 'send_distance_ble' was here
+ char send_distance_ble (float distane[QUANT_SENSORS][SIZE_CIRCLE_VEC], float *variance, float *sd);
+      ^~~~~~~~~~~~~~~~~
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:126:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:126:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+src/subdir.mk:33: recipe for target 'src/ble_functions.o' failed
+../src/ble_functions.c:126:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+make: *** [src/ble_functions.o] Error 1
+18:09:39 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:126:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:126:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:126:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:46:6: error: conflicting types for 'calcule_stats'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:41:6: note: previous declaration of 'calcule_stats' was here
+ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+make: *** [src/distance_functions.o] Error 1
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+18:09:55 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c:46:6: error: conflicting types for 'calcule_stats'
+ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+In file included from ../src/distance_functions.c:2:0:
+../src/distance_functions.h:41:6: note: previous declaration of 'calcule_stats' was here
+ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd);
+      ^~~~~~~~~~~~~
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+make: *** [src/distance_functions.o] Error 1
+18:10:13 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:22: warning: unused variable 'which_sensor' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                      ^~~~~~~~~~~~
+../src/distance_functions.c:98:16: warning: unused variable 'turn' [-Wunused-variable]
+     int i = 0, turn, which_sensor = 0;
+                ^~~~
+../src/distance_functions.c:97:11: warning: unused variable 'avg_buffer' [-Wunused-variable]
+     float avg_buffer = 0;
+           ^~~~~~~~~~
+Finished building: ../src/distance_functions.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95780	   1560	   3364	 100704	  18960	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+18:10:36 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95768	   1560	   3360	 100688	  18950	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+18:11:21 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:15: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int pos = pos_end;
+               ^~~~~~~
+../src/distance_functions.c:101:18: error: invalid type argument of unary '*' (have 'int')
+          dist[0][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                  ^~~~
+../src/distance_functions.c:102:18: error: invalid type argument of unary '*' (have 'int')
+          dist[1][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                  ^~~~
+../src/distance_functions.c:103:18: error: invalid type argument of unary '*' (have 'int')
+          dist[2][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                  ^~~~
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+../src/distance_functions.c:105:11: error: invalid type argument of unary '*' (have 'int')
+          (*pos)++;
+           ^~~~
+../src/distance_functions.c:106:14: error: invalid type argument of unary '*' (have 'int')
+          if (*pos >= SIZE_CIRCLE_VEC)
+              ^~~~
+../src/distance_functions.c:107:14: error: invalid type argument of unary '*' (have 'int')
+              *pos = 0;
+              ^~~~
+../src/distance_functions.c:110:9: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+     pos = pos_end;
+         ^
+../src/distance_functions.c:111:5: error: too few arguments to function 'calcule_stats'
+     calcule_stats(dist, pos)
+     ^~~~~~~~~~~~~
+../src/distance_functions.c:46:6: note: declared here
+ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+../src/distance_functions.c:114:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/distance_functions.o] Error 1
+18:11:38 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:15: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int pos = pos_end;
+               ^~~~~~~
+../src/distance_functions.c:101:18: error: invalid type argument of unary '*' (have 'int')
+          dist[0][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                  ^~~~
+../src/distance_functions.c:102:18: error: invalid type argument of unary '*' (have 'int')
+          dist[1][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                  ^~~~
+../src/distance_functions.c:103:18: error: invalid type argument of unary '*' (have 'int')
+          dist[2][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                  ^~~~
+../src/distance_functions.c:105:11: error: invalid type argument of unary '*' (have 'int')
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+          (*pos)++;
+           ^~~~
+../src/distance_functions.c:106:14: error: invalid type argument of unary '*' (have 'int')
+          if (*pos >= SIZE_CIRCLE_VEC)
+              ^~~~
+../src/distance_functions.c:107:14: error: invalid type argument of unary '*' (have 'int')
+              *pos = 0;
+              ^~~~
+../src/distance_functions.c:110:9: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+     pos = pos_end;
+         ^
+../src/distance_functions.c:111:25: warning: passing argument 2 of 'calcule_stats' makes integer from pointer without a cast [-Wint-conversion]
+     calcule_stats(dist, pos_end, avg, variance, sd);
+                         ^~~~~~~
+../src/distance_functions.c:46:6: note: expected 'int' but argument is of type 'int *'
+ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+make: *** [src/distance_functions.o] Error 1
+18:12:01 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:15: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int pos = pos_end;
+               ^~~~~~~
+../src/distance_functions.c:110:9: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+     pos = pos_end;
+         ^
+../src/distance_functions.c:111:25: warning: passing argument 2 of 'calcule_stats' makes integer from pointer without a cast [-Wint-conversion]
+     calcule_stats(dist, pos_end, avg, variance, sd);
+                         ^~~~~~~
+../src/distance_functions.c:46:6: note: expected 'int' but argument is of type 'int *'
+ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103008	   1564	   3364	 107936	  1a5a0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+18:12:30 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:18: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int pos_bk = pos_end;
+                  ^~~~~~~
+../src/distance_functions.c:101:18: error: 'pos' undeclared (first use in this function); did you mean 'pow'?
+          dist[0][pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                  ^~~
+                  pow
+../src/distance_functions.c:101:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/distance_functions.c:112:25: warning: passing argument 2 of 'calcule_stats' makes integer from pointer without a cast [-Wint-conversion]
+     calcule_stats(dist, pos_end, avg, variance, sd);
+                         ^~~~~~~
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+../src/distance_functions.c:46:6: note: expected 'int' but argument is of type 'int *'
+ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd)
+      ^~~~~~~~~~~~~
+../src/distance_functions.c:98:9: warning: unused variable 'pos_bk' [-Wunused-variable]
+     int pos_bk = pos_end;
+         ^~~~~~
+make: *** [src/distance_functions.o] Error 1
+18:12:35 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:18: error: 'pos_end' undeclared (first use in this function); did you mean 'pos_bk'?
+     int pos_bk = pos_end;
+                  ^~~~~~~
+                  pos_bk
+../src/distance_functions.c:98:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/distance_functions.c:101:17: error: array subscript is not an integer
+          dist[0][pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                 ^
+../src/distance_functions.c:102:17: error: array subscript is not an integer
+          dist[1][pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                 ^
+../src/distance_functions.c:103:17: error: array subscript is not an integer
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+          dist[2][pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                 ^
+../src/distance_functions.c:106:18: warning: comparison between pointer and integer
+          if (pos >= SIZE_CIRCLE_VEC)
+                  ^~
+../src/distance_functions.c:98:9: warning: unused variable 'pos_bk' [-Wunused-variable]
+     int pos_bk = pos_end;
+         ^~~~~~
+make: *** [src/distance_functions.o] Error 1
+18:12:45 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:18: error: 'pos_end' undeclared (first use in this function); did you mean 'pos_bk'?
+     int pos_bk = pos_end;
+                  ^~~~~~~
+                  pos_bk
+../src/distance_functions.c:98:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/distance_functions.c:106:18: warning: comparison between pointer and integer
+          if (pos >= SIZE_CIRCLE_VEC)
+                  ^~
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+make: *** [src/distance_functions.o] Error 1
+18:13:02 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:19: error: 'pos_end' undeclared (first use in this function); did you mean 'pos_bk'?
+     int pos_bk = *pos_end;
+                   ^~~~~~~
+                   pos_bk
+../src/distance_functions.c:98:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/distance_functions.c:98:9: warning: unused variable 'pos_bk' [-Wunused-variable]
+     int pos_bk = *pos_end;
+         ^~~~~~
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+make: *** [src/distance_functions.o] Error 1
+18:13:19 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:98:19: error: 'pos_end' undeclared (first use in this function); did you mean 'pos_bk'?
+     int pos_bk = *pos_end;
+                   ^~~~~~~
+                   pos_bk
+../src/distance_functions.c:98:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/distance_functions.o] Error 1
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+18:13:38 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'measure_distance':
+../src/distance_functions.c:101:17: error: array subscript is not an integer
+          dist[0][pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                 ^
+../src/distance_functions.c:102:17: error: array subscript is not an integer
+          dist[1][pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+                 ^
+../src/distance_functions.c:103:17: error: array subscript is not an integer
+          dist[2][pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+                 ^
+../src/distance_functions.c:106:18: warning: comparison between pointer and integer
+          if (pos >= SIZE_CIRCLE_VEC)
+                  ^~
+make: *** [src/distance_functions.o] Error 1
+18:13:52 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103036	   1564	   3368	 107968	  1a5c0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+18:13:57 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103036	   1564	   3368	 107968	  1a5c0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:03:11 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:04:02 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:11:45 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:12:06 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:12:38 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:13:49 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102996	   1564	   3368	 107928	  1a598	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:13:50 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102996	   1564	   3368	 107928	  1a598	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:13:56 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:18:37 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43444	   1440	   3348	  48232	   bc68	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:18:40 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:19:03 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:23:34 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43444	   1440	   3348	  48232	   bc68	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:26:15 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43444	   1440	   3348	  48232	   bc68	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:26:45 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43788	   1440	   3348	  48576	   bdc0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:26:47 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:27:03 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:38:46 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31380	   1436	   3352	  36168	   8d48	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:38:50 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:39:03 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:39:36 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31384	   1436	   3348	  36168	   8d48	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:39:38 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:39:54 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31384	   1436	   3348	  36168	   8d48	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:40:11 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30540	   1436	   3352	  35328	   8a00	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:41:34 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31716	   1436	   3352	  36504	   8e98	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:41:36 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:42:37 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31712	   1436	   3348	  36496	   8e90	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:42:42 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:42:57 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30536	   1436	   3348	  35320	   89f8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:43:01 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31380	   1436	   3352	  36168	   8d48	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:43:02 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:43:11 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43440	   1440	   3344	  48224	   bc60	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:43:13 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:09 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:37 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43764	   1440	   3348	  48552	   bda8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:49:42 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:58 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'calcule_stats':
+../src/distance_functions.c:80:9: error: 'varance' undeclared (first use in this function); did you mean 'variance'?
+     p_f(varance[0]);
+         ^~~~~~~
+         variance
+../src/distance_functions.c:80:9: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+make: *** [src/distance_functions.o] Error 1
+19:50:00 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'calcule_stats':
+../src/distance_functions.c:80:9: error: 'varance' undeclared (first use in this function); did you mean 'variance'?
+     p_f(varance[0]);
+         ^~~~~~~
+         variance
+../src/distance_functions.c:80:9: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+make: *** [src/distance_functions.o] Error 1
+19:50:05 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43764	   1440	   3348	  48552	   bda8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:50:08 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:51:17 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43776	   1440	   3344	  48560	   bdb0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:51:19 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:52:29 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43820	   1440	   3348	  48608	   bde0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:52:30 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:55:51 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44192	   1440	   3344	  48976	   bf50	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:55:54 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:35 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43788	   1440	   3348	  48576	   bdc0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:56:59 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43868	   1440	   3348	  48656	   be10	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:57:00 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:26 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33364	   1436	   3352	  38152	   9508	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:57:48 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33412	   1436	   3352	  38200	   9538	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:57:49 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:58:44 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:09 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+../src/distance_functions.c: In function 'calcule_stats':
+../src/distance_functions.c:60:9: error: 'p' undeclared (first use in this function)
+         p+f(v[0][pos]);
+         ^
+../src/distance_functions.c:60:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/distance_functions.c:60:11: warning: implicit declaration of function 'f' [-Wimplicit-function-declaration]
+         p+f(v[0][pos]);
+           ^
+src/subdir.mk:33: recipe for target 'src/distance_functions.o' failed
+make: *** [src/distance_functions.o] Error 1
+19:59:15 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33452	   1436	   3352	  38240	   9560	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+19:59:17 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:29 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:35 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:40 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:59 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32948	   1436	   3352	  37736	   9368	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:00:04 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32908	   1436	   3352	  37696	   9340	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:00:05 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:00:15 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32956	   1436	   3352	  37744	   9370	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:00:16 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:12 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:42 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32992	   1436	   3364	  37792	   93a0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:01:43 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:56 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:02:07 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44032	   1440	   3360	  48832	   bec0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:02:59 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:03:23 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44032	   1440	   3360	  48832	   bec0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:03:26 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:03:42 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44088	   1440	   3360	  48888	   bef8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:03:42 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:04:03 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:04:10 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:04:42 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44168	   1440	   3360	  48968	   bf48	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:04:44 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:04:53 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:05:11 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44156	   1440	   4476	  50072	   c398	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:05:13 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:05:58 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43900	   1440	   4476	  49816	   c298	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:10:06 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:10:51 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43900	   1440	   4476	  49816	   c298	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:10:52 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:13:04 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43520	   1440	   4472	  49432	   c118	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:13:42 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101940	   1564	   4496	 108000	  1a5e0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:13:43 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:15:14 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:123:13: error: expected ')' before ';' token
+      while(1;)
+             ^
+../src/ble_functions.c:126:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:126:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:126:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+src/subdir.mk:33: recipe for target 'src/ble_functions.o' failed
+make: *** [src/ble_functions.o] Error 1
+20:15:16 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:126:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:126:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:126:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35632	    400	   4416	  40448	   9e00	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:15:18 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:17:23 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101288	   1564	   4492	 107344	  1a350	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:17:26 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:17:38 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101288	   1564	   4492	 107344	  1a350	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:17:40 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:18:27 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101288	   1564	   4492	 107344	  1a350	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:18:29 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:19:16 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:19:42 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101468	   1564	   4496	 107528	  1a408	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:19:43 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:20:45 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101976	   1564	   4492	 108032	  1a600	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:20:53 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:22:08 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:23:28 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101884	   1564	   4496	 107944	  1a5a8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:23:33 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101884	   1564	   4496	 107944	  1a5a8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:23:36 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:23:50 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:25:33 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101924	   1564	   4496	 107984	  1a5d0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:25:49 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101888	   1564	   4492	 107944	  1a5a8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:26:05 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101876	   1564	   4496	 107936	  1a5a0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:26:49 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101876	   1564	   4496	 107936	  1a5a0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:26:52 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:27:10 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+20:28:21 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:107:11: warning: type defaults to 'int' in declaration of 'TAM_BUFFER' [-Wimplicit-int]
+     const TAM_BUFFER = 6;
+           ^~~~~~~~~~
+../src/ble_functions.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.2f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 101808	   1564	   4492	 107864	  1a558	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+20:28:24 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.

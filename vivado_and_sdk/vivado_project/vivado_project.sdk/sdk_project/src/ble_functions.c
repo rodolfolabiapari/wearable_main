@@ -66,7 +66,7 @@ char send_and_wait_confirmation_ble (char messenge)
 		// Calcules the pulse duration by the formula below
 		pulse_duration = (time) / CLOCKS_PER_SECOND;
 
-		if (DEBUG) xil_printf("Waiting BLE connection      %c      \r", buffer[0]);
+		//if (DEBUG) xil_printf("Waiting BLE connection      %c      \r", buffer[0]);
 		if (pulse_duration > WAIT_ANSWER_TIME)
 			return DEVICE_OFF;
 
@@ -119,21 +119,18 @@ char send_distance_ble (float *distance, float *variance, float *sd)
 
 
     for (i = 0; i < QUANT_SENSORS; i++) {
-    	xil_printf("Distance: %d\n", (int) distance[i]);
-
+    	xil_printf("Distance: %d\n\r", (int) distance[i]);
         // prepares buffer with question command
         buffer[0] = '\0';
         sprintf((char *) buffer, "%03.2f", distance[i]);
-
         // sends the messenge question
         BLE_SendData(&ble_device, buffer, TAM_BUFFER);
 
-        xil_printf("Sending variance: ");
+        xil_printf("Sending variance: \n\r");
 
-        send_ble ('e');
- 
+        send_and_wait_confirmation_ble ('e');
         
-        xil_printf("Variance: %d\n", (int) variance[i]);
+        xil_printf("Variance: %d\n\r", (int) variance[i]);
 
         // prepares buffer with question command
         buffer[0] = '\0';
@@ -142,24 +139,28 @@ char send_distance_ble (float *distance, float *variance, float *sd)
         // sends the messenge question
         BLE_SendData(&ble_device, buffer, TAM_BUFFER);
 
-        xil_printf("Sending sd: ");
+        xil_printf("Sending sd: \n\r");
 
-        send_ble ('e');
+        send_and_wait_confirmation_ble ('e');
 
 
-    	xil_printf("Distance: %d\n", (int) distance[i]);
+    	xil_printf("Distance: %d\n\r", (int) sd[i]);
 
         // prepares buffer with question comman
         buffer[0] = '\0';
-        sprintf((char *) buffer, "%03.2f", distance[i]);
+        sprintf((char *) buffer, "%03.2f", sd[i]);
 
         // sends the messenge question
         BLE_SendData(&ble_device, buffer, TAM_BUFFER);
 
-        xil_printf("Sending variance: ");
+        xil_printf("Sending variance: \n\r");
 
-        send_ble (';');
+    	send_and_wait_confirmation_ble (';');
+
+        xil_printf("Done\n\r", buffer);
+    	while(1);
     }
+
 
 
     return XST_SUCCESS;

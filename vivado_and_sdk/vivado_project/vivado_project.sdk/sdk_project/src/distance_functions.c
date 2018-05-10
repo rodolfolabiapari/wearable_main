@@ -1,7 +1,9 @@
 
 #include "distance_functions.h"
 
-
+void p_f(float f) {
+	xil_printf("\r%d                \n\r", (int) f);
+}
 
 u32 request_pulse_hcsr04_sensor(XGpio * gpio_in) {
 
@@ -43,16 +45,16 @@ u32 request_pulse_hcsr04_sensor(XGpio * gpio_in) {
     return XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
 }
 
-void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float * sd)
+void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd)
 {
-    float sum0 = 0, sum1 = 0, sum2 = 0;
+    static float sum0 = 0, sum1 = 0, sum2 = 0;
     int i = 0;
     int pos = pos_end;
 
     // Searches for the max and min values
     for (i = 0; i < TIMES_MEASURES; i++) {
         if (pos < 0) 
-            pos = SIZE_CIRCLE_VET - 1;
+            pos = SIZE_CIRCLE_VEC - 1;
 
         sum0 += v[0][pos];
         sum1 += v[1][pos];
@@ -65,18 +67,24 @@ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float
     avg[2] = sum2 / (TIMES_MEASURES);
 
     pos = pos_end;
+    variance[0] = 0;
+    variance[1] = 0;
+    variance[2] = 0;
+
      // Variances
     for (i = 0; i < TIMES_MEASURES; i++) {
         if (pos < 0)
-            pos = SIZE_CIRCLE_VET - 1;
+            pos = SIZE_CIRCLE_VEC - 1;
         variance[0] += (v[0][pos] - avg[0]) * (v[0][pos] - avg[0]);
         variance[1] += (v[1][pos] - avg[1]) * (v[1][pos] - avg[1]);
         variance[2] += (v[2][pos] - avg[2]) * (v[2][pos] - avg[2]);
+
+        pos--;
     }
 
-    variance[0] /= TIMES_MEASURES - 1;
-    variance[1] /= TIMES_MEASURES - 1;
-    variance[2] /= TIMES_MEASURES - 1;
+    variance[0] /= TIMES_MEASURES;
+    variance[1] /= TIMES_MEASURES;
+    variance[2] /= TIMES_MEASURES;
 
     sd[0] = sqrt(variance[0]);
     sd[1] = sqrt(variance[1]);
@@ -92,10 +100,9 @@ void calcule_stats(float ** v, int pos_end, float * avg, float * variance, float
  * @param: times_measures: times of numbers of average.
  * @return: average of distance measured.
  */
-void measure_distance (XGpio *gpio_in, float ** dist, int * pos, float * avg, float * variance, float * sd)
+void measure_distance (XGpio *gpio_in, float dist[QUANT_SENSORS][SIZE_CIRCLE_VEC], int * pos, float * avg, float * variance, float * sd)
 {
-    float avg_buffer = 0;
-    int i = 0, turn, which_sensor = 0;
+    int i = 0;
 
     for (i = 0; i < TIMES_MEASURES; i++) {
          dist[0][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
@@ -103,39 +110,9 @@ void measure_distance (XGpio *gpio_in, float ** dist, int * pos, float * avg, fl
          dist[2][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
 
          (*pos)++;
-         if (*pos >= SIZE_CIRCLE_VET) 
-             *pos = 0;
+         if (*pos >= SIZE_CIRCLE_VEC)
+        	 *pos = 0;
     }
 
-
-
-
-    for (which_sensor = 0; which_sensor < QUANT_SENSORS; which_sensor++) {
-    	turn = 0;
-        do {
-            switch(which_sensor) {
-                case(0):
-                    buffer[turn] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
-                    break;
-                case(1):
-                    buffer[turn] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
-                    break;
-                case(2):
-                    buffer[turn] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
-                    break;
-                default:
-                    break;
-            }
-
-            if (buffer[turn] < MAX_DISTANCE_SENSOR) {
-                turn++;
-            }
-        } while(turn < TIMES_MEASURES);
-
-        calcule_stats(buffer, &avg_buffer, variance, sd);
-        
-        avg[which_sensor] = avg_buffer;
-
-        if (DEBUG) xil_printf("----- AVG: %d cm\r\n|------", (int) avg[which_sensor]);
-    }
+    calcule_stats(dist, *pos, avg, variance, sd);
 }

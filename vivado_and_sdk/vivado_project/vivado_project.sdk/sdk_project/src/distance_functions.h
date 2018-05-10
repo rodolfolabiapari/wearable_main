@@ -38,7 +38,7 @@
 u32 request_pulse_hcsr04_sensor(XGpio * gpio_in);
 
 
-void calcule_stats(float v[TIMES_MEASURES], float * avg, float * variance, float * sd);
+void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd);
 
 /*
  * It manages the ultrasonic sensor. Gets the value and calcules the distance.
@@ -58,6 +58,6 @@ float get_distance_sensor (XGpio *gpio_in);
  * @param: times_measures: times of numbers of average.
  * @return: average of distance measured.
  */
-void measure_distance (XGpio *gpio_in, float ** dist, int * pos_circle_vec, float * avg, float * variance, float * sd);
+void measure_distance (XGpio *gpio_in, float dist[QUANT_SENSORS][SIZE_CIRCLE_VEC], int * pos_circle_vec, float * avg, float * variance, float * sd);
 
 #endif

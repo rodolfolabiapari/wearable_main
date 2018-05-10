@@ -7,8 +7,8 @@
  * CHANNEL OF GPIO DEVICES: is always 1 or 2;
  * OUTPUT/INPUT OF GPIO:    output 0        and Input: 0xFFFFFFFF
  */
-// Teste de fork
-// Includes
+
+
 #include "platform.h"           // Uart communication and caches
 #include "xil_printf.h"         // To print in console
 #include "xstatus.h"            // Constants for status of system
@@ -23,7 +23,7 @@
 
 void clear_screen ()
 {
-   if (DEBUG) xil_printf("\e[1;1H\e[2J\r");
+   if (0 && DEBUG) xil_printf("\e[1;1H\e[2J\r");
 }
 
 
@@ -35,13 +35,13 @@ void clear_screen ()
  * @param safety_distance: a minimum distance to keep the user safe.
  * @return a constant that represents the user's situationn.
  */
-char verify_safety_distance (float *current_distance, float safety_distance)
+char verify_safety_distance (float current_distance[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos, float safety_distance)
 {
     int i = 0;
 
     for (i = 0; i < QUANT_SENSORS; i++) {
         // Verifies the situation that the user are
-        if (current_distance[i] > safety_distance) {
+        if (current_distance[i][pos] > safety_distance) {
             if (DEBUG) xil_printf("--- The user is safe\r\n|------");
         } else
         {
@@ -87,10 +87,12 @@ int main (void)
     // Variable declarations
     // GPIO structures;
     XGpio gpio_shield, gpio_led_switch;
+    u8 reg_leds = 0;
 
     // States variables
     u8 status;
-    float distance[QUANT_SENSORS][SIZE_CIRCLE_VEC], avg[QUANT_SENSORS], variance[QUANT_SENSORS], sd[QUANT_SENSORS], safety_distance = 30.0;
+    static float distance[QUANT_SENSORS][SIZE_CIRCLE_VEC], avg[QUANT_SENSORS],
+	variance[QUANT_SENSORS], sd[QUANT_SENSORS], safety_distance = 30.0;
     // state that the user is
     char situation = 0;
     int pos_circle_vec = 0;
@@ -140,15 +142,15 @@ int main (void)
             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
 
             // Sends the distance of user to device connected
-            status = send_distance_ble(distance, variance, sd);
+            status = send_distance_ble(avg, variance, sd);
 
             if (status == FAILURE) {
                 if (DEBUG) xil_printf(" Ending processing -- ERROR SEND DISTANCE\r\n");
             }
-
+            while(1);
             // Verifies the value received
             if (DEBUG) xil_printf(" Verifying the safety\r\n|------");
-            situation = verify_safety_distance(distance, safety_distance);
+            situation = verify_safety_distance(distance, pos_circle_vec, safety_distance);
 
             if (DEBUG) xil_printf(" Evaluating the situation\r\n|---");
             status = evaluate_situation(situation);
