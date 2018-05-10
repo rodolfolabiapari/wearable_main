@@ -90,9 +90,10 @@ int main (void)
 
     // States variables
     u8 status;
-    float distance[QUANT_SENSORS], variance[QUANT_SENSORS] = 0, sd[QUANT_SENSORS] = 0, safety_distance = 30.0;
+    float distance[QUANT_SENSORS * (SIZE_CIRCLE_VEC)], variance[QUANT_SENSORS] = 0, sd[QUANT_SENSORS] = 0, safety_distance = 30.0;
     // state that the user is
     char situation = 0;
+    char pos_circle_vec = 0;
 
     // Leds register u8 reg_leds = 0; 
     // Initialize the GPIO devices.
@@ -136,7 +137,7 @@ int main (void)
             if (DEBUG) xil_printf("--- Getting the distance\r\n|------");
 
             // Gets the distance of HC-SR04
-            measure_distance (&gpio_shield, distance, variance, sd);
+            measure_distance (&gpio_shield, distance, &pos_circle_vec, variance, sd);
 
             // Sends the distance of user to device connected
             status = send_distance_ble(distance, variance, sd);

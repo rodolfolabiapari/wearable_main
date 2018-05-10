@@ -20,4 +20,7 @@
 // Reads of sensors
 #define QUANT_SENSORS           3
 
+#define SIZE_CIRCLE_VEC          90
+
+
 #endif /* SRC_CONSTANTS_H_ */

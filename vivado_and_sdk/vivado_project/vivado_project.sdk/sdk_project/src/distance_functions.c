@@ -75,11 +75,23 @@ void calcule_stats(float v[TIMES_MEASURES], float * avg, float * variance, float
  * @param: times_measures: times of numbers of average.
  * @return: average of distance measured.
  */
-void measure_distance (XGpio *gpio_in, float * avg, float * variance, float * sd)
+void measure_distance (XGpio *gpio_in, float * dist, char * pos, float * variance, float * sd)
 {
     float avg_buffer = 0;
-    int turn, which_sensor = 0;
-    static float buffer[TIMES_MEASURES];
+    int i = 0, turn, which_sensor = 0;
+
+    for (i = 0; i < TIMES_MEASURES; i++) {
+         dist[*pos + 0] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+         dist[*pos + 1] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+         dist[*pos + 2] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
+
+         *pos += 3;
+         if (*pos >= SIZE_CIRCLE_VET) 
+             *pos = 0;
+    }
+
+
+
 
     for (which_sensor = 0; which_sensor < QUANT_SENSORS; which_sensor++) {
     	turn = 0;
