@@ -1,2 +1,2 @@
-.metadata/
-vivado_and_sdk/vivado_project/vivado_project.sdk/.metadata/
+vivado_and_sdk/vivado_project/vivado_project.cache*
+vivado_and_sdk/vivado_project/vivado_project.sdk/.meta*
