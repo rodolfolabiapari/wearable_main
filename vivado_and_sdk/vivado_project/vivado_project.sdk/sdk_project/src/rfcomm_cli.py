@@ -15,6 +15,14 @@ def read_char():
 	#print info
 	return info
 
+def read_float():
+    f = '0'
+    number = read_char()
+    while (number != 'e'):
+        f += number
+	number = read_char()
+    return f
+
 def write_char(caractere):
 	rf.write(caractere)
 	rf.flush()
@@ -25,23 +33,40 @@ def listen():
 		menu = read_char()
 		if (menu == '?'):
 			write_char('1')
+
 		elif (menu == 'd'):
 			write_char('1')
 			quant_sensors = int(read_char())
+
 			write_char('1')
 			distances = []
+                        variances = []
+                        sds       = []
 			for i in range(0, quant_sensors):
-				distance = '0'
+				distances.append(read_)
+				write_char('1')
+
+                                variance = '0'
 				number = read_char()
-				while (number != ','):
-					distance += number
+				while (number != 'e'):
+					variance += number
 					number = read_char()
 				write_char('1')
-				distances.append(distance)
+				variances.append(variance)
+
+                                sd = '0'
+				number = read_char()
+				while (number != ';'):
+					sd += number
+					number = read_char()
+				write_char('1')
+				sds.append(sd)
+
 		elif (menu == 's'):
 			situation = read_char()
 			write_char('1')
-			print 'Key:'+ `key` + '  Distan:' + ' '.join(distances) + 'cm  Sts:' + situation + '   Dt:' + str(time.ctime())[8:19] + '   (0) Exit (2) Stop'
+
+			print 'Key:'+ `key` + '  D|V|SD:' + ' '.join(distances) + '|'  + ' '.join(variances) +  '|'  + ' '.join(sds) + 'cm  \n|---Sts:' + situation + '   Dt:' + str(time.ctime())[8:19] + '   (0) Exit (2) Stop'
 	print 'Closing read thread'
 	
 if (len(sys.argv) == 4):

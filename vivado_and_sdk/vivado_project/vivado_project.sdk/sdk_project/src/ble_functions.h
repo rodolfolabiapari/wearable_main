@@ -37,7 +37,7 @@ void starting_ble_communication ();
 void send_ble (char messenge);
 char send_and_wait_confirmation_ble (char messenge);
 char send_and_wait_response_ble (char messenge);
-char send_distance_ble (float *distance);
+char send_distance_ble (float *distance, float *variance, float *sd);
 
 char is_ble_connected (XGpio * gpio_led, u8 * reg_leds);
 

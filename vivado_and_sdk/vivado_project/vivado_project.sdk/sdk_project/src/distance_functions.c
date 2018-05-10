@@ -95,7 +95,7 @@ void measure_distance (XGpio *gpio_in, float * avg, float * variance, float * sd
                     buffer[turn] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
                     break;
                 default:
-                	break;
+                    break;
             }
 
             if (buffer[turn] < MAX_DISTANCE_SENSOR) {

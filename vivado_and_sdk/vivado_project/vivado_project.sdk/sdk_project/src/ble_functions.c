@@ -1,6 +1,5 @@
 #include "ble_functions.h"
 
-
 PmodBLE ble_device;        // structure of bluetooth communication and its
                             //informations
 SysUart uart_device;        // structure of uart communication by system.
@@ -103,9 +102,10 @@ char send_and_wait_response_ble (char messenge)
 
 
 
-char send_distance_ble (float *distance)
+char send_distance_ble (float *distance, float *variance, float *sd)
 {
-    u8 buffer [3];
+    const TAM_BUFFER = 6;
+    u8 buffer [TAM_BUFFER];
     int i;
     char status;
 
@@ -119,18 +119,48 @@ char send_distance_ble (float *distance)
 
 
     for (i = 0; i < QUANT_SENSORS; i++) {
-    	xil_printf("%d\n", (int) distance[i]);
+    	xil_printf("Distance: %d\n", (int) distance[i]);
 
         // prepares buffer with question command
-        sprintf((char *) buffer, "%03d", (int) distance[i]);
+        buffer[0] = '\0';
+        sprintf((char *) buffer, "%03.2f", distance[i]);
 
         // sends the messenge question
-        BLE_SendData(&ble_device, buffer, 3);
+        BLE_SendData(&ble_device, buffer, TAM_BUFFER);
 
-        xil_printf("Sending distances");
+        xil_printf("Sending variance: ");
 
-        send_ble (',');
+        send_ble ('e');
+ 
+        
+        xil_printf("Variance: %d\n", (int) variance[i]);
+
+        // prepares buffer with question command
+        buffer[0] = '\0';
+        sprintf((char *) buffer, "%03.2f", variance[i]);
+
+        // sends the messenge question
+        BLE_SendData(&ble_device, buffer, TAM_BUFFER);
+
+        xil_printf("Sending sd: ");
+
+        send_ble ('e');
+
+
+    	xil_printf("Distance: %d\n", (int) distance[i]);
+
+        // prepares buffer with question comman
+        buffer[0] = '\0';
+        sprintf((char *) buffer, "%03.2f", distance[i]);
+
+        // sends the messenge question
+        BLE_SendData(&ble_device, buffer, TAM_BUFFER);
+
+        xil_printf("Sending variance: ");
+
+        send_ble (';');
     }
+
 
     return XST_SUCCESS;
 }

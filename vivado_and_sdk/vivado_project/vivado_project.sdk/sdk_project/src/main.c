@@ -90,13 +90,11 @@ int main (void)
 
     // States variables
     u8 status;
-    float distance[QUANT_SENSORS], variance = 0, sd = 0, safety_distance = 30.0;
+    float distance[QUANT_SENSORS], variance[QUANT_SENSORS] = 0, sd[QUANT_SENSORS] = 0, safety_distance = 30.0;
     // state that the user is
     char situation = 0;
 
-    // Leds register
-    u8 reg_leds = 0;
-
+    // Leds register u8 reg_leds = 0; 
     // Initialize the GPIO devices.
     // Gets the information form the GPIO, SHIELD device
     status = XGpio_Initialize(&gpio_shield, XPAR_AXI_GPIO_SHIELD_DEVICE_ID);
@@ -138,14 +136,14 @@ int main (void)
             if (DEBUG) xil_printf("--- Getting the distance\r\n|------");
 
             // Gets the distance of HC-SR04
-            measure_distance (&gpio_shield, distance, &variance, &sd);
+            measure_distance (&gpio_shield, distance, variance, sd);
 
             // Sends the distance of user to device connected
-            status = send_distance_ble(distance);
+            status = send_distance_ble(distance, variance, sd);
 
             if (status == FAILURE) {
-				if (DEBUG) xil_printf(" Ending processing -- ERROR SEND DISTANCE\r\n");
-			}
+                if (DEBUG) xil_printf(" Ending processing -- ERROR SEND DISTANCE\r\n");
+            }
 
             // Verifies the value received
             if (DEBUG) xil_printf(" Verifying the safety\r\n|------");
