@@ -75,7 +75,7 @@ void calcule_stats(float v[TIMES_MEASURES], float * avg, float * variance, float
  * @param: times_measures: times of numbers of average.
  * @return: average of distance measured.
  */
-void measure_distance (XGpio *gpio_in, float * dist, char * pos, float * variance, float * sd)
+void measure_distance (XGpio *gpio_in, float * dist, char * pos, float * avg, float * variance, float * sd)
 {
     float avg_buffer = 0;
     int i = 0, turn, which_sensor = 0;
