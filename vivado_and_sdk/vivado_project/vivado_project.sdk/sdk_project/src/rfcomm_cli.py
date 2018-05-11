@@ -48,7 +48,7 @@ def listen():
 				while (number != 'e'):
 					distance += number
 					number = read_char()
-				write_char('1')
+				#write_char('1')
 				distances.append(distance)
 
                                 variance = '0'
@@ -56,7 +56,7 @@ def listen():
 				while (number != 'e'):
 					variance += number
 					number = read_char()
-				write_char('1')
+				#write_char('1')
 				variances.append(variance)
 
                                 sd = '0'
@@ -64,7 +64,7 @@ def listen():
 				while (number != ';'):
 					sd += number
 					number = read_char()
-				write_char('1')
+				#write_char('1')
 				sds.append(sd)
 
 		elif (menu == 's'):

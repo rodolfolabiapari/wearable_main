@@ -10,10 +10,11 @@
 #include "xil_assert.h"         // file of asserts
 #include "xstatus.h"            // Constants from Xilinx
 #include "xgpio.h"              // AXI GPIO
-
 #include "erros_msg.h"
 #include "leds_switchs_functions.h"
 #include "constants.h"
+#include "xil_cache.h"
+#include "xparameters.h"
 
 typedef XUartLite SysUart;
 

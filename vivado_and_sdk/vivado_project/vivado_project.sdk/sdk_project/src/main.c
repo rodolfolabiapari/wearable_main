@@ -121,22 +121,20 @@ int main (void)
     status = SUCCESS;
 
     while (is_device_on(&gpio_led_switch, &reg_leds) == DEVICE_OFF)
-        if (DEBUG) xil_printf("Device is off. Use the SW0 to turn it on.   \r");
+        if (DEBUG) xil_printf("\rDevice is off. Use the SW0 to turn it on.   ");
 
-    if (DEBUG) xil_printf("DEBUG MODE ON\r\n");
-    if (DEBUG) xil_printf("Starting the system!\r\n");
+    if (DEBUG) xil_printf("\rDEBUG MODE ON                       ");
+    if (DEBUG) xil_printf("\n\rStarting the system!\n");
 
+    print("asdfsdaf");
 
     while (is_device_on(&gpio_led_switch, &reg_leds) == DEVICE_ON) {
 
         while (is_ble_connected(&gpio_led_switch, &reg_leds) == DEVICE_OFF)
-            if (DEBUG) xil_printf("BLE is not connected.                       \r");
-
-        if (DEBUG) xil_printf("|--- Stating BLE communication\r\n|---");
+            if (DEBUG) xil_printf("\rBLE is not connected.                       ");
 
         do {
-            if (DEBUG) xil_printf(" Stating Processing\r\n|---");
-            if (DEBUG) xil_printf("--- Getting the distance\r\n|------");
+            if (DEBUG) xil_printf("\rGetting the distance                    ");
 
             // Gets the distance of HC-SR04
             measure_distance (&gpio_shield, distance, &pos_circle_vec, avg, variance, sd);
@@ -147,6 +145,7 @@ int main (void)
             if (status == FAILURE) {
                 if (DEBUG) xil_printf(" Ending processing -- ERROR SEND DISTANCE\r\n");
             }
+
             while(1);
             // Verifies the value received
             if (DEBUG) xil_printf(" Verifying the safety\r\n|------");

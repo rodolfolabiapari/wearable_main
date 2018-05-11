@@ -1936,3 +1936,1437 @@ con
 ----------------End of Script----------------
 
 20:28:26 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:13:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:13:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:13:19 INFO  : FPGA configured successfully with bitstream "/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+09:13:44 INFO  : Disconnected from the channel tcfchan#64.
+09:18:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:18:48 INFO  : 'fpga -state' command is executed.
+09:18:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:18:48 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:18:48 INFO  : 'jtag frequency' command is executed.
+09:18:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:18:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+09:18:48 INFO  : Memory regions updated for context PA
+09:18:48 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:18:48 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:19:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:19:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:19:12 INFO  : FPGA configured successfully with bitstream "/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+09:46:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:46:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:46:05 INFO  : FPGA configured successfully with bitstream "/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+09:46:10 INFO  : Disconnected from the channel tcfchan#65.
+09:46:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:46:11 INFO  : 'fpga -state' command is executed.
+09:46:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:46:11 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:46:11 INFO  : 'jtag frequency' command is executed.
+09:46:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:46:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:46:11 INFO  : Processor reset is completed for 'microblaze_0'.
+09:46:12 INFO  : Context for processor 'microblaze_0' is selected.
+09:46:12 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:46:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:46:12 INFO  : Memory regions updated for context PA
+09:46:12 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:46:12 INFO  : Context for processor 'microblaze_0' is selected.
+09:46:12 INFO  : 'con' command is executed.
+09:46:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:46:12 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:48:27 INFO  : Disconnected from the channel tcfchan#66.
+09:48:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:48:28 INFO  : 'fpga -state' command is executed.
+09:48:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:48:29 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:48:29 INFO  : 'jtag frequency' command is executed.
+09:48:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:48:29 INFO  : Context for processor 'microblaze_0' is selected.
+09:48:29 INFO  : Processor reset is completed for 'microblaze_0'.
+09:48:29 INFO  : Context for processor 'microblaze_0' is selected.
+09:48:29 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:48:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:48:29 INFO  : Memory regions updated for context PA
+09:48:29 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:48:29 INFO  : Context for processor 'microblaze_0' is selected.
+09:48:29 INFO  : 'con' command is executed.
+09:48:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:48:29 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:49:00 INFO  : Disconnected from the channel tcfchan#67.
+09:49:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:49:01 INFO  : 'fpga -state' command is executed.
+09:49:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:01 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:49:01 INFO  : 'jtag frequency' command is executed.
+09:49:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:49:01 INFO  : Context for processor 'microblaze_0' is selected.
+09:49:01 INFO  : Processor reset is completed for 'microblaze_0'.
+09:49:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:49:02 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:49:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:49:02 INFO  : Memory regions updated for context PA
+09:49:02 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:49:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:49:02 INFO  : 'con' command is executed.
+09:49:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:49:02 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:49:30 INFO  : Disconnected from the channel tcfchan#68.
+09:49:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:49:32 INFO  : 'fpga -state' command is executed.
+09:49:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:32 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:49:32 INFO  : 'jtag frequency' command is executed.
+09:49:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:49:32 INFO  : Context for processor 'microblaze_0' is selected.
+09:49:32 INFO  : Processor reset is completed for 'microblaze_0'.
+09:49:32 INFO  : Context for processor 'microblaze_0' is selected.
+09:49:33 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:49:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:49:33 INFO  : Memory regions updated for context PA
+09:49:33 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:49:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:49:33 INFO  : 'con' command is executed.
+09:49:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:49:33 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:49:48 INFO  : Disconnected from the channel tcfchan#69.
+09:49:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:49:49 INFO  : 'fpga -state' command is executed.
+09:49:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:49 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:49:49 INFO  : 'jtag frequency' command is executed.
+09:49:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:49:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:49:49 INFO  : Processor reset is completed for 'microblaze_0'.
+09:49:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:49:50 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:49:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:49:50 INFO  : Memory regions updated for context PA
+09:49:50 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:49:50 INFO  : Context for processor 'microblaze_0' is selected.
+09:49:50 INFO  : 'con' command is executed.
+09:49:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:49:50 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:50:46 INFO  : Disconnected from the channel tcfchan#70.
+09:50:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:50:48 INFO  : 'fpga -state' command is executed.
+09:50:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:50:48 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:50:48 INFO  : 'jtag frequency' command is executed.
+09:50:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:50:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:48 INFO  : Processor reset is completed for 'microblaze_0'.
+09:50:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:48 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:50:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:50:48 INFO  : Memory regions updated for context PA
+09:50:48 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:50:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:50:49 INFO  : 'con' command is executed.
+09:50:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:50:49 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:51:05 INFO  : Disconnected from the channel tcfchan#71.
+09:51:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:51:06 INFO  : 'fpga -state' command is executed.
+09:51:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:06 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:51:06 INFO  : 'jtag frequency' command is executed.
+09:51:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:51:06 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:06 INFO  : Processor reset is completed for 'microblaze_0'.
+09:51:06 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:07 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:51:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:51:07 INFO  : Memory regions updated for context PA
+09:51:07 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:51:07 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:07 INFO  : 'con' command is executed.
+09:51:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:51:07 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:51:27 INFO  : Disconnected from the channel tcfchan#72.
+09:51:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:51:28 INFO  : 'fpga -state' command is executed.
+09:51:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:28 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:51:28 INFO  : 'jtag frequency' command is executed.
+09:51:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:51:28 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:28 INFO  : Processor reset is completed for 'microblaze_0'.
+09:51:28 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:29 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:51:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:51:29 INFO  : Memory regions updated for context PA
+09:51:29 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:51:29 INFO  : Context for processor 'microblaze_0' is selected.
+09:51:29 INFO  : 'con' command is executed.
+09:51:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:51:29 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:52:04 INFO  : Disconnected from the channel tcfchan#73.
+09:52:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:52:05 INFO  : 'fpga -state' command is executed.
+09:52:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:05 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:52:05 INFO  : 'jtag frequency' command is executed.
+09:52:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:52:05 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:05 INFO  : Processor reset is completed for 'microblaze_0'.
+09:52:05 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:06 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:52:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:52:06 INFO  : Memory regions updated for context PA
+09:52:06 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:52:06 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:06 INFO  : 'con' command is executed.
+09:52:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:52:06 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:52:57 INFO  : Disconnected from the channel tcfchan#74.
+09:52:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:52:59 INFO  : 'fpga -state' command is executed.
+09:52:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:59 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:52:59 INFO  : 'jtag frequency' command is executed.
+09:52:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:52:59 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:59 INFO  : Processor reset is completed for 'microblaze_0'.
+09:52:59 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:00 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:53:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:53:00 INFO  : Memory regions updated for context PA
+09:53:00 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:53:00 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:00 INFO  : 'con' command is executed.
+09:53:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:53:00 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:53:35 INFO  : Disconnected from the channel tcfchan#75.
+09:53:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:53:36 INFO  : 'fpga -state' command is executed.
+09:53:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:37 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:53:37 INFO  : 'jtag frequency' command is executed.
+09:53:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:53:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:37 INFO  : Processor reset is completed for 'microblaze_0'.
+09:53:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:37 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:53:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:53:37 INFO  : Memory regions updated for context PA
+09:53:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:53:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:37 INFO  : 'con' command is executed.
+09:53:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:53:37 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:54:01 INFO  : Disconnected from the channel tcfchan#76.
+09:54:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:54:02 INFO  : 'fpga -state' command is executed.
+09:54:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:02 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:54:02 INFO  : 'jtag frequency' command is executed.
+09:54:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:54:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:54:02 INFO  : Processor reset is completed for 'microblaze_0'.
+09:54:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:54:03 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:54:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:54:03 INFO  : Memory regions updated for context PA
+09:54:03 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:54:03 INFO  : Context for processor 'microblaze_0' is selected.
+09:54:03 INFO  : 'con' command is executed.
+09:54:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:54:03 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:55:15 INFO  : Disconnected from the channel tcfchan#77.
+09:55:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:55:16 INFO  : 'fpga -state' command is executed.
+09:55:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:17 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:55:17 INFO  : 'jtag frequency' command is executed.
+09:55:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:55:17 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:17 INFO  : Processor reset is completed for 'microblaze_0'.
+09:55:17 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:17 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:55:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:55:17 INFO  : Memory regions updated for context PA
+09:55:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:55:17 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:17 INFO  : 'con' command is executed.
+09:55:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:55:17 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:55:44 INFO  : Disconnected from the channel tcfchan#78.
+09:55:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:55:45 INFO  : 'fpga -state' command is executed.
+09:55:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:45 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:55:45 INFO  : 'jtag frequency' command is executed.
+09:55:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:55:45 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:45 INFO  : Processor reset is completed for 'microblaze_0'.
+09:55:45 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:46 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:55:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:55:46 INFO  : Memory regions updated for context PA
+09:55:46 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:55:46 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:46 INFO  : 'con' command is executed.
+09:55:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:55:46 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:56:12 INFO  : Disconnected from the channel tcfchan#79.
+09:56:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:56:13 INFO  : 'fpga -state' command is executed.
+09:56:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:56:13 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:56:13 INFO  : 'jtag frequency' command is executed.
+09:56:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:56:13 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:13 INFO  : Processor reset is completed for 'microblaze_0'.
+09:56:13 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:14 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:56:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:56:14 INFO  : Memory regions updated for context PA
+09:56:14 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:56:14 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:14 INFO  : 'con' command is executed.
+09:56:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:56:14 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:56:50 INFO  : Disconnected from the channel tcfchan#80.
+09:56:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:56:51 INFO  : 'fpga -state' command is executed.
+09:56:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:56:52 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:56:52 INFO  : 'jtag frequency' command is executed.
+09:56:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:56:52 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:52 INFO  : Processor reset is completed for 'microblaze_0'.
+09:56:52 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:52 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:56:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:56:52 INFO  : Memory regions updated for context PA
+09:56:52 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:56:52 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:53 INFO  : 'con' command is executed.
+09:56:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:56:53 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:57:47 INFO  : Disconnected from the channel tcfchan#81.
+09:57:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:57:48 INFO  : 'fpga -state' command is executed.
+09:57:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:57:48 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:57:48 INFO  : 'jtag frequency' command is executed.
+09:57:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:57:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:57:48 INFO  : Processor reset is completed for 'microblaze_0'.
+09:57:48 INFO  : Context for processor 'microblaze_0' is selected.
+09:57:49 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:57:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:57:49 INFO  : Memory regions updated for context PA
+09:57:49 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:57:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:57:49 INFO  : 'con' command is executed.
+09:57:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:57:49 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:58:01 INFO  : Disconnected from the channel tcfchan#82.
+09:58:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:58:03 INFO  : 'fpga -state' command is executed.
+09:58:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:58:03 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:58:03 INFO  : 'jtag frequency' command is executed.
+09:58:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:58:03 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:03 INFO  : Processor reset is completed for 'microblaze_0'.
+09:58:03 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:03 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:58:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:58:04 INFO  : Memory regions updated for context PA
+09:58:04 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:58:04 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:04 INFO  : 'con' command is executed.
+09:58:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:58:04 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+09:58:22 INFO  : Disconnected from the channel tcfchan#83.
+09:58:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+09:58:23 INFO  : 'fpga -state' command is executed.
+09:58:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:58:24 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+09:58:24 INFO  : 'jtag frequency' command is executed.
+09:58:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:58:24 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:24 INFO  : Processor reset is completed for 'microblaze_0'.
+09:58:24 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:24 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+09:58:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+09:58:24 INFO  : Memory regions updated for context PA
+09:58:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+09:58:24 INFO  : Context for processor 'microblaze_0' is selected.
+09:58:24 INFO  : 'con' command is executed.
+09:58:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+09:58:24 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+10:00:15 INFO  : Disconnected from the channel tcfchan#84.
+10:00:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+10:00:16 INFO  : 'fpga -state' command is executed.
+10:00:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:16 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+10:00:16 INFO  : 'jtag frequency' command is executed.
+10:00:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:00:16 INFO  : Context for processor 'microblaze_0' is selected.
+10:00:16 INFO  : Processor reset is completed for 'microblaze_0'.
+10:00:17 INFO  : Context for processor 'microblaze_0' is selected.
+10:00:17 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+10:00:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+10:00:17 INFO  : Memory regions updated for context PA
+10:00:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:00:17 INFO  : Context for processor 'microblaze_0' is selected.
+10:00:17 INFO  : 'con' command is executed.
+10:00:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+10:00:17 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+10:00:50 INFO  : Disconnected from the channel tcfchan#85.
+10:00:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+10:00:51 INFO  : 'fpga -state' command is executed.
+10:00:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:51 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+10:00:51 INFO  : 'jtag frequency' command is executed.
+10:00:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:00:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:00:52 INFO  : Processor reset is completed for 'microblaze_0'.
+10:00:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:00:52 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+10:00:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+10:00:52 INFO  : Memory regions updated for context PA
+10:00:52 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:00:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:00:52 INFO  : 'con' command is executed.
+10:00:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+10:00:52 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+10:02:24 INFO  : Disconnected from the channel tcfchan#86.
+10:02:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+10:02:25 INFO  : 'fpga -state' command is executed.
+10:02:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:26 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+10:02:26 INFO  : 'jtag frequency' command is executed.
+10:02:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:02:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:26 INFO  : Processor reset is completed for 'microblaze_0'.
+10:02:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:26 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+10:02:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+10:02:26 INFO  : Memory regions updated for context PA
+10:02:26 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:02:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:26 INFO  : 'con' command is executed.
+10:02:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+10:02:26 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+12:59:50 INFO  : Disconnected from the channel tcfchan#87.
+12:59:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+12:59:51 INFO  : 'fpga -state' command is executed.
+12:59:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:51 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+12:59:51 INFO  : 'jtag frequency' command is executed.
+12:59:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:59:51 INFO  : Context for processor 'microblaze_0' is selected.
+12:59:51 INFO  : Processor reset is completed for 'microblaze_0'.
+12:59:51 INFO  : Context for processor 'microblaze_0' is selected.
+12:59:52 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+12:59:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+12:59:52 INFO  : Memory regions updated for context PA
+12:59:52 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+12:59:52 INFO  : Context for processor 'microblaze_0' is selected.
+12:59:52 INFO  : 'con' command is executed.
+12:59:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+12:59:52 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:01:32 INFO  : Disconnected from the channel tcfchan#88.
+13:01:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:01:33 INFO  : 'fpga -state' command is executed.
+13:01:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:01:33 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:01:33 INFO  : 'jtag frequency' command is executed.
+13:01:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:01:33 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:33 INFO  : Processor reset is completed for 'microblaze_0'.
+13:01:33 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:34 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:01:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:01:34 INFO  : Memory regions updated for context PA
+13:01:34 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:01:34 INFO  : Context for processor 'microblaze_0' is selected.
+13:01:34 INFO  : 'con' command is executed.
+13:01:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:01:34 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:02:48 INFO  : Disconnected from the channel tcfchan#89.
+13:02:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:02:49 INFO  : 'fpga -state' command is executed.
+13:02:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:49 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:02:49 INFO  : 'jtag frequency' command is executed.
+13:02:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:02:49 INFO  : Context for processor 'microblaze_0' is selected.
+13:02:49 INFO  : Processor reset is completed for 'microblaze_0'.
+13:02:49 INFO  : Context for processor 'microblaze_0' is selected.
+13:02:49 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:02:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:02:49 INFO  : Memory regions updated for context PA
+13:02:49 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:02:49 INFO  : Context for processor 'microblaze_0' is selected.
+13:02:49 INFO  : 'con' command is executed.
+13:02:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:02:49 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:03:07 INFO  : Disconnected from the channel tcfchan#90.
+13:03:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:03:08 INFO  : 'fpga -state' command is executed.
+13:03:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:08 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:03:08 INFO  : 'jtag frequency' command is executed.
+13:03:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:03:08 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:08 INFO  : Processor reset is completed for 'microblaze_0'.
+13:03:08 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:09 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:03:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:03:09 INFO  : Memory regions updated for context PA
+13:03:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:03:09 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:09 INFO  : 'con' command is executed.
+13:03:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:03:09 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:03:17 INFO  : Disconnected from the channel tcfchan#91.
+13:03:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:03:19 INFO  : 'fpga -state' command is executed.
+13:03:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:19 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:03:19 INFO  : 'jtag frequency' command is executed.
+13:03:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:03:19 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:19 INFO  : Processor reset is completed for 'microblaze_0'.
+13:03:19 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:19 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:03:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:03:19 INFO  : Memory regions updated for context PA
+13:03:19 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:03:19 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:19 INFO  : 'con' command is executed.
+13:03:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:03:19 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:03:22 INFO  : Disconnected from the channel tcfchan#92.
+13:03:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:03:23 INFO  : 'fpga -state' command is executed.
+13:03:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:23 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:03:23 INFO  : 'jtag frequency' command is executed.
+13:03:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:03:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:24 INFO  : Processor reset is completed for 'microblaze_0'.
+13:03:24 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:24 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:03:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:03:24 INFO  : Memory regions updated for context PA
+13:03:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:03:24 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:24 INFO  : 'con' command is executed.
+13:03:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:03:24 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:03:54 INFO  : Disconnected from the channel tcfchan#93.
+13:03:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:03:56 INFO  : 'fpga -state' command is executed.
+13:03:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:56 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:03:56 INFO  : 'jtag frequency' command is executed.
+13:03:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:03:56 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:56 INFO  : Processor reset is completed for 'microblaze_0'.
+13:03:56 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:56 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:03:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:03:56 INFO  : Memory regions updated for context PA
+13:03:56 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:03:56 INFO  : Context for processor 'microblaze_0' is selected.
+13:03:56 INFO  : 'con' command is executed.
+13:03:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:03:56 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:08:39 INFO  : Disconnected from the channel tcfchan#94.
+13:08:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:08:40 INFO  : 'fpga -state' command is executed.
+13:08:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:08:40 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:08:40 INFO  : 'jtag frequency' command is executed.
+13:08:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:08:40 INFO  : Context for processor 'microblaze_0' is selected.
+13:08:40 INFO  : Processor reset is completed for 'microblaze_0'.
+13:08:40 INFO  : Context for processor 'microblaze_0' is selected.
+13:08:40 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:08:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:08:40 INFO  : Memory regions updated for context PA
+13:08:40 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:08:41 INFO  : Context for processor 'microblaze_0' is selected.
+13:08:41 INFO  : 'con' command is executed.
+13:08:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:08:41 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:09:41 INFO  : Disconnected from the channel tcfchan#95.
+13:09:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:09:42 INFO  : 'fpga -state' command is executed.
+13:09:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:09:42 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:09:42 INFO  : 'jtag frequency' command is executed.
+13:09:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:09:42 INFO  : Context for processor 'microblaze_0' is selected.
+13:09:42 INFO  : Processor reset is completed for 'microblaze_0'.
+13:09:42 INFO  : Context for processor 'microblaze_0' is selected.
+13:09:43 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:09:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:09:43 INFO  : Memory regions updated for context PA
+13:09:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:09:43 INFO  : Context for processor 'microblaze_0' is selected.
+13:09:43 INFO  : 'con' command is executed.
+13:09:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:09:43 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:33:02 INFO  : Disconnected from the channel tcfchan#96.
+13:33:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:33:03 INFO  : 'fpga -state' command is executed.
+13:33:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:33:03 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:33:03 INFO  : 'jtag frequency' command is executed.
+13:33:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:33:04 INFO  : Context for processor 'microblaze_0' is selected.
+13:33:04 INFO  : Processor reset is completed for 'microblaze_0'.
+13:33:04 INFO  : Context for processor 'microblaze_0' is selected.
+13:33:04 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:33:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:33:04 INFO  : Memory regions updated for context PA
+13:33:04 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:33:04 INFO  : Context for processor 'microblaze_0' is selected.
+13:33:04 INFO  : 'con' command is executed.
+13:33:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:33:04 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:33:57 INFO  : Disconnected from the channel tcfchan#97.
+13:33:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:33:58 INFO  : 'fpga -state' command is executed.
+13:33:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:33:59 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:33:59 INFO  : 'jtag frequency' command is executed.
+13:33:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:33:59 INFO  : Context for processor 'microblaze_0' is selected.
+13:33:59 INFO  : Processor reset is completed for 'microblaze_0'.
+13:33:59 INFO  : Context for processor 'microblaze_0' is selected.
+13:33:59 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:33:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:33:59 INFO  : Memory regions updated for context PA
+13:33:59 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:34:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:34:00 INFO  : 'con' command is executed.
+13:34:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:34:00 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:35:22 INFO  : Disconnected from the channel tcfchan#98.
+13:35:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:35:23 INFO  : 'fpga -state' command is executed.
+13:35:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:35:23 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:35:23 INFO  : 'jtag frequency' command is executed.
+13:35:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:35:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:35:23 INFO  : Processor reset is completed for 'microblaze_0'.
+13:35:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:35:24 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:35:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:35:24 INFO  : Memory regions updated for context PA
+13:35:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:35:24 INFO  : Context for processor 'microblaze_0' is selected.
+13:35:24 INFO  : 'con' command is executed.
+13:35:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:35:24 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:35:43 INFO  : Disconnected from the channel tcfchan#99.
+13:35:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:35:44 INFO  : 'fpga -state' command is executed.
+13:35:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:35:44 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:35:44 INFO  : 'jtag frequency' command is executed.
+13:35:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:35:44 INFO  : Context for processor 'microblaze_0' is selected.
+13:35:44 INFO  : Processor reset is completed for 'microblaze_0'.
+13:35:44 INFO  : Context for processor 'microblaze_0' is selected.
+13:35:45 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:35:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:35:45 INFO  : Memory regions updated for context PA
+13:35:45 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:35:45 INFO  : Context for processor 'microblaze_0' is selected.
+13:35:45 INFO  : 'con' command is executed.
+13:35:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:35:45 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:37:35 INFO  : Disconnected from the channel tcfchan#100.
+13:37:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:37:36 INFO  : 'fpga -state' command is executed.
+13:37:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:37:36 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:37:36 INFO  : 'jtag frequency' command is executed.
+13:37:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:37:36 INFO  : Context for processor 'microblaze_0' is selected.
+13:37:36 INFO  : Processor reset is completed for 'microblaze_0'.
+13:37:36 INFO  : Context for processor 'microblaze_0' is selected.
+13:37:37 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:37:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:37:37 INFO  : Memory regions updated for context PA
+13:37:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:37:37 INFO  : Context for processor 'microblaze_0' is selected.
+13:37:37 INFO  : 'con' command is executed.
+13:37:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:37:37 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:38:42 INFO  : Disconnected from the channel tcfchan#101.
+13:38:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:38:43 INFO  : 'fpga -state' command is executed.
+13:38:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:38:43 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:38:43 INFO  : 'jtag frequency' command is executed.
+13:38:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:38:43 INFO  : Context for processor 'microblaze_0' is selected.
+13:38:43 INFO  : Processor reset is completed for 'microblaze_0'.
+13:38:43 INFO  : Context for processor 'microblaze_0' is selected.
+13:38:44 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:38:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:38:44 INFO  : Memory regions updated for context PA
+13:38:44 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:38:44 INFO  : Context for processor 'microblaze_0' is selected.
+13:38:44 INFO  : 'con' command is executed.
+13:38:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:38:44 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:39:08 INFO  : Disconnected from the channel tcfchan#102.
+13:39:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:39:09 INFO  : 'fpga -state' command is executed.
+13:39:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:39:10 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:39:10 INFO  : 'jtag frequency' command is executed.
+13:39:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:39:10 INFO  : Context for processor 'microblaze_0' is selected.
+13:39:10 INFO  : Processor reset is completed for 'microblaze_0'.
+13:39:10 INFO  : Context for processor 'microblaze_0' is selected.
+13:39:10 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:39:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:39:10 INFO  : Memory regions updated for context PA
+13:39:10 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:39:10 INFO  : Context for processor 'microblaze_0' is selected.
+13:39:10 INFO  : 'con' command is executed.
+13:39:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:39:10 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:40:09 INFO  : Disconnected from the channel tcfchan#103.
+13:40:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:40:10 INFO  : 'fpga -state' command is executed.
+13:40:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:40:10 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:40:10 INFO  : 'jtag frequency' command is executed.
+13:40:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:40:10 INFO  : Context for processor 'microblaze_0' is selected.
+13:40:10 INFO  : Processor reset is completed for 'microblaze_0'.
+13:40:10 INFO  : Context for processor 'microblaze_0' is selected.
+13:40:11 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:40:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:40:11 INFO  : Memory regions updated for context PA
+13:40:11 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:40:11 INFO  : Context for processor 'microblaze_0' is selected.
+13:40:11 INFO  : 'con' command is executed.
+13:40:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:40:11 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:40:58 INFO  : Disconnected from the channel tcfchan#104.
+13:40:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:40:59 INFO  : 'fpga -state' command is executed.
+13:40:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:40:59 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:40:59 INFO  : 'jtag frequency' command is executed.
+13:40:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:40:59 INFO  : Context for processor 'microblaze_0' is selected.
+13:40:59 INFO  : Processor reset is completed for 'microblaze_0'.
+13:40:59 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:00 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:41:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:41:00 INFO  : Memory regions updated for context PA
+13:41:00 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:41:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:00 INFO  : 'con' command is executed.
+13:41:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:41:00 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:41:28 INFO  : Disconnected from the channel tcfchan#105.
+13:41:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:41:30 INFO  : 'fpga -state' command is executed.
+13:41:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:41:30 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:41:30 INFO  : 'jtag frequency' command is executed.
+13:41:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:41:30 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:30 INFO  : Processor reset is completed for 'microblaze_0'.
+13:41:30 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:31 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:41:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:41:31 INFO  : Memory regions updated for context PA
+13:41:31 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:41:31 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:31 INFO  : 'con' command is executed.
+13:41:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:41:31 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:41:44 INFO  : Disconnected from the channel tcfchan#106.
+13:41:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:41:45 INFO  : 'fpga -state' command is executed.
+13:41:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:41:45 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:41:45 INFO  : 'jtag frequency' command is executed.
+13:41:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:41:45 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:45 INFO  : Processor reset is completed for 'microblaze_0'.
+13:41:46 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:46 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:41:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:41:46 INFO  : Memory regions updated for context PA
+13:41:46 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:41:46 INFO  : Context for processor 'microblaze_0' is selected.
+13:41:46 INFO  : 'con' command is executed.
+13:41:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:41:46 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:42:22 INFO  : Disconnected from the channel tcfchan#107.
+13:42:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:42:23 INFO  : 'fpga -state' command is executed.
+13:42:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:42:23 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:42:23 INFO  : 'jtag frequency' command is executed.
+13:42:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:42:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:23 INFO  : Processor reset is completed for 'microblaze_0'.
+13:42:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:24 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:42:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:42:24 INFO  : Memory regions updated for context PA
+13:42:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:42:24 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:24 INFO  : 'con' command is executed.
+13:42:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:42:24 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:42:41 INFO  : Disconnected from the channel tcfchan#108.
+13:42:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:42:42 INFO  : 'fpga -state' command is executed.
+13:42:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:42:42 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:42:43 INFO  : 'jtag frequency' command is executed.
+13:42:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:42:43 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:43 INFO  : Processor reset is completed for 'microblaze_0'.
+13:42:43 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:43 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:42:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:42:43 INFO  : Memory regions updated for context PA
+13:42:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:42:43 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:43 INFO  : 'con' command is executed.
+13:42:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:42:43 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:42:58 INFO  : Disconnected from the channel tcfchan#109.
+13:42:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:42:59 INFO  : 'fpga -state' command is executed.
+13:42:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:42:59 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:42:59 INFO  : 'jtag frequency' command is executed.
+13:42:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:42:59 INFO  : Context for processor 'microblaze_0' is selected.
+13:42:59 INFO  : Processor reset is completed for 'microblaze_0'.
+13:42:59 INFO  : Context for processor 'microblaze_0' is selected.
+13:43:00 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:43:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:43:00 INFO  : Memory regions updated for context PA
+13:43:00 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:43:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:43:00 INFO  : 'con' command is executed.
+13:43:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:43:00 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:43:14 INFO  : Disconnected from the channel tcfchan#110.
+13:43:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:43:16 INFO  : 'fpga -state' command is executed.
+13:43:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:43:16 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:43:16 INFO  : 'jtag frequency' command is executed.
+13:43:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:43:16 INFO  : Context for processor 'microblaze_0' is selected.
+13:43:16 INFO  : Processor reset is completed for 'microblaze_0'.
+13:43:16 INFO  : Context for processor 'microblaze_0' is selected.
+13:43:17 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:43:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:43:17 INFO  : Memory regions updated for context PA
+13:43:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:43:17 INFO  : Context for processor 'microblaze_0' is selected.
+13:43:17 INFO  : 'con' command is executed.
+13:43:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:43:17 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+13:51:34 INFO  : Disconnected from the channel tcfchan#111.
+13:51:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A43677A" && level==0} -index 0' command is executed.
+13:51:35 INFO  : 'fpga -state' command is executed.
+13:51:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:51:35 INFO  : Jtag cable 'Digilent Arty 210319A43677A' is selected.
+13:51:35 INFO  : 'jtag frequency' command is executed.
+13:51:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:51:35 INFO  : Context for processor 'microblaze_0' is selected.
+13:51:35 INFO  : Processor reset is completed for 'microblaze_0'.
+13:51:35 INFO  : Context for processor 'microblaze_0' is selected.
+13:51:36 INFO  : The application '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf' is downloaded to processor 'microblaze_0'.
+13:51:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+dow /home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/sdk_project.elf
+----------------End of Script----------------
+
+13:51:36 INFO  : Memory regions updated for context PA
+13:51:36 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:51:36 INFO  : Context for processor 'microblaze_0' is selected.
+13:51:36 INFO  : 'con' command is executed.
+13:51:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A43677A"} -index 0
+con
+----------------End of Script----------------
+
+13:51:36 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
