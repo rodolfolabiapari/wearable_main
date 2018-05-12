@@ -1,0 +1,421 @@
+{
+  "sampleCount": 12351,
+  "entries": [
+    {
+      "addr": 2147583648,
+      "name": "XUartLite_SendByte",
+      "line": 0,
+      "count": 7744,
+      "total": 7744.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147583224,
+      "name": "XTmrCtr_GetValue",
+      "line": 0,
+      "count": 1503,
+      "total": 1503.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147580196,
+      "name": "XGpio_DiscreteRead",
+      "line": 0,
+      "count": 1304,
+      "total": 1304.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147578212,
+      "name": "XUartNs550_Recv",
+      "line": 0,
+      "count": 408,
+      "total": 408.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147577884,
+      "name": "XUartNs550_ReceiveBuffer",
+      "line": 0,
+      "count": 175,
+      "total": 175.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147577160,
+      "name": "BLE_RecvData",
+      "line": 0,
+      "count": 53,
+      "total": 53.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147510032,
+      "name": "_dtoa_r",
+      "line": 0,
+      "count": 7,
+      "total": 7.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147575420,
+      "name": "outnum",
+      "line": 0,
+      "count": 6,
+      "total": 6.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147495220,
+      "name": "_svfprintf_r",
+      "line": 0,
+      "count": 5,
+      "total": 5.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147528740,
+      "name": "_Bfree",
+      "line": 0,
+      "count": 4,
+      "total": 4.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147530420,
+      "name": "__lo0bits",
+      "line": 0,
+      "count": 2,
+      "total": 2.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147546220,
+      "name": "memmove",
+      "line": 0,
+      "count": 2,
+      "total": 2.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147583524,
+      "name": "outbyte",
+      "line": 0,
+      "count": 2,
+      "total": 2.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147494856,
+      "name": "sprintf",
+      "line": 0,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147495044,
+      "name": "strlen",
+      "line": 0,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147575032,
+      "name": "usleep",
+      "line": 0,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147577276,
+      "name": "XUartNs550_SendBuffer",
+      "line": 0,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147577520,
+      "name": "XUartNs550_Send",
+      "line": 0,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147567648,
+      "name": "send_and_wait_confirmation_ble",
+      "fileFull": "/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/../src/ble_functions.c",
+      "fileBase": "ble_functions.c",
+      "line": 63,
+      "count": 189,
+      "total": 189.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147568028,
+      "name": "send_distance_ble",
+      "fileFull": "/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/../src/ble_functions.c",
+      "fileBase": "ble_functions.c",
+      "line": 131,
+      "count": 2,
+      "total": 2.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147567556,
+      "name": "send_ble",
+      "fileFull": "/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/../src/ble_functions.c",
+      "fileBase": "ble_functions.c",
+      "line": 50,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147570068,
+      "name": "request_pulse_hcsr04_sensor",
+      "fileFull": "/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/sdk_project/Debug/../src/distance_functions.c",
+      "fileBase": "distance_functions.c",
+      "line": 8,
+      "count": 742,
+      "total": 742.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147487584,
+      "name": "__divdf3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 1047,
+      "count": 12,
+      "total": 12.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147493484,
+      "name": "__unpack_d",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 454,
+      "count": 11,
+      "total": 11.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147558228,
+      "name": "_fpadd_parts",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 584,
+      "count": 10,
+      "total": 10.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147560228,
+      "name": "__muldf3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 928,
+      "count": 7,
+      "total": 7.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147484652,
+      "name": "_fpadd_parts",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 584,
+      "count": 4,
+      "total": 4.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147485680,
+      "name": "__addsf3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 722,
+      "count": 2,
+      "total": 2.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147485868,
+      "name": "__mulsf3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 928,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147488480,
+      "name": "__make_dp",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 1533,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147490216,
+      "name": "__pack_f",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 199,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147559992,
+      "name": "__adddf3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 722,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147560104,
+      "name": "__subdf3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 742,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147561872,
+      "name": "__eqdf2",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 1174,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147562528,
+      "name": "__unorddf2",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 1299,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147562672,
+      "name": "__floatsidf",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 1317,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147563104,
+      "name": "__fixdfsi",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/fp-bit.c",
+      "fileBase": "fp-bit.c",
+      "line": 1395,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147489452,
+      "name": "__muldi3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/libgcc2.c",
+      "fileBase": "libgcc2.c",
+      "line": 548,
+      "count": 9,
+      "total": 9.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147489008,
+      "name": "__mulsi3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/config/microblaze/mulsi3.S",
+      "fileBase": "mulsi3.S",
+      "line": 40,
+      "count": 5,
+      "total": 5.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147489096,
+      "name": "__udivsi3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/config/microblaze/udivsi3.S",
+      "fileBase": "udivsi3.S",
+      "line": 41,
+      "count": 125,
+      "total": 125.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 2147489264,
+      "name": "__umodsi3",
+      "fileFull": "/proj/sdk/gnu/microblaze/builds/HEAD/nightly/2017_11_15/rdi_scripts/../build/lin/ctng_bld/target_build/src/gcc-custom/libgcc/config/microblaze/umodsi3.S",
+      "fileBase": "umodsi3.S",
+      "line": 41,
+      "count": 3,
+      "total": 3.0,
+      "callerMap": {},
+      "calleeMap": {}
+    }
+  ],
+  "stackTrace": false
+}

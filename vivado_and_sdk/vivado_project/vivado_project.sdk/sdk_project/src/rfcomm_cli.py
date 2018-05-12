@@ -1,8 +1,8 @@
 # !/usr/bin/python
 
+from __future__ import print_function
 import os, sys
 import time
-
 import serial, thread
 
 porta = '/dev/rfcomm'
@@ -12,7 +12,7 @@ key = 1
 
 def read_char():
 	info = rf.read()
-	print info
+	print (info, end='')
 	return info
 
 def read_float():
@@ -28,7 +28,7 @@ def write_char(caractere):
 	rf.flush()
 
 def listen():
-	print '\nStarting Read Thread'
+	print ("\nStarting Read Thread")
 	while (key != 0 and key != 2):
 		menu = read_char()
 		if (menu == '?'):
@@ -71,17 +71,17 @@ def listen():
 			situation = read_char()
 			write_char('1')
 
-			print 'Key:'+ `key` + '  D|V|SD:' + ' '.join(distances) + '|'  + ' '.join(variances) +  '|'  + ' '.join(sds) + 'cm  \n|---Sts:' + situation + '   Dt:' + str(time.ctime())[8:19] + '   (0) Exit (2) Stop'
-	print 'Closing read thread'
+			print ('Key:'+ `key` + '  D|V|SD:' + ' '.join(distances) + '|'  + ' '.join(variances) +  '|'  + ' '.join(sds) + 'cm  \n|---Sts:' + situation + '   Dt:' + str(time.ctime())[8:19] + '   (0) Exit (2) Stop')
+	print ('Closing read thread')
 	
 if (len(sys.argv) == 4):
         rf = serial.Serial()
         rf.baudrate = sys.argv[3]
         rf.port = sys.argv[1] + sys.argv[2]
 
-	print 'Opening'
+	print ('Opening')
         rf.open()
-        print 'The socket is open: ' + str(rf.is_open)
+        print ('The socket is open: ' + str(rf.is_open))
 
 	while (key != 0):
 		if (key != 2):
@@ -92,9 +92,9 @@ if (len(sys.argv) == 4):
 			#thread.exit()
 			key = input('(0) Exit (1) Continue')
 	
-	print 'Closing the program, bye'
+	print ('Closing the program, bye')
         rf.close()
-	print 'Closed'
+	print ('Closed')
 
 elif (len(sys.argv) == 1):
 	rf = serial.Serial()
@@ -106,7 +106,7 @@ elif (len(sys.argv) == 1):
 	rf.close()
 
 else :
-	print 'Error: <name> <port> <number> <baud_rate>\n'
+	print ('Error: <name> <port> <number> <baud_rate>\n')
 	sys.exit()
 
 

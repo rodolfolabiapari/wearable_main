@@ -35,17 +35,17 @@ void clear_screen ()
  * @param safety_distance: a minimum distance to keep the user safe.
  * @return a constant that represents the user's situationn.
  */
-char verify_safety_distance (float current_distance[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos, float safety_distance)
+char verify_safety_distance (float distance[QUANT_SENSORS], int pos, float safety_distance)
 {
     int i = 0;
 
     for (i = 0; i < QUANT_SENSORS; i++) {
         // Verifies the situation that the user are
-        if (current_distance[i][pos] > safety_distance) {
-            if (DEBUG) xil_printf("--- The user is safe\r\n|------");
+        if (distance[i] > safety_distance) {
+            if (DEBUG) xil_printf(": The user is safe");
         } else
         {
-             if (DEBUG) xil_printf("--- The user is not safe\r\n|------");
+             if (DEBUG) xil_printf(": The user is not safe");
              return WARNING_SITUATION;
         }
     }
@@ -60,19 +60,22 @@ char verify_safety_distance (float current_distance[QUANT_SENSORS][SIZE_CIRCLE_V
  * This is required to the other device can warning the user, if needed.
  * @param situation: situation of user
  */
-char evaluate_situation (char situation)
+char sending_situation (char situation)
 {
     // we will send the situation
     send_ble('s');
 
-    xil_printf("Sending situation");
 
-    if (situation == WARNING_SITUATION)
+    if (situation == WARNING_SITUATION) {
+        xil_printf(": Warning");
         // Sends messenger to device
         return send_and_wait_confirmation_ble('W');
-    else
+    }
+    else {
+        xil_printf(": Safety");
         // Sends messenger to device
         return send_and_wait_confirmation_ble('S');
+    }
 }
 
 
@@ -97,6 +100,8 @@ int main (void)
     // state that the user is
     char situation = 0;
     int pos_circle_vec = 0;
+
+    xil_printf("\n\n\e[1;1H\e[2J\r");
 
     // Leds register u8 reg_leds = 0; 
     // Initialize the GPIO devices.
@@ -125,13 +130,13 @@ int main (void)
         if (DEBUG) xil_printf("\rDevice is off. Use the SW0 to turn it on.   ");
 
     if (DEBUG) xil_printf("\rDEBUG MODE ON                       ");
-    if (DEBUG) xil_printf("\n\rStarting the system! Iteration %d\n", iterationi++);
+    if (DEBUG) xil_printf("\n\rStarting the system! Iteration %d\n", iteration++);
 
 
     while (is_device_on(&gpio_led_switch, &reg_leds) == DEVICE_ON) {
 
         while (is_ble_connected(&gpio_led_switch, &reg_leds) == DEVICE_OFF)
-            if (DEBUG) xil_printf("\rBLE is not connected.                       ");
+            if (DEBUG) xil_printf("\rBLE is not responding.                       ");
 
         do {
             if (DEBUG) xil_printf("\rGetting the distance                    ");
@@ -147,20 +152,17 @@ int main (void)
                 break;
             }
 
-            while(1);
             // Verifies the value received
             if (DEBUG) xil_printf("\n\rVerifying the safety");
-            situation = verify_safety_distance(distance, pos_circle_vec, safety_distance);
+            situation = verify_safety_distance(avg, pos_circle_vec, safety_distance);
 
-            if (DEBUG) xil_printf("\n\rEvaluating the situation");
-            status = evaluate_situation(situation);
+            if (DEBUG) xil_printf("\n\rEvaluating the situation:");
+            status = sending_situation(situation);
 
             if (status == FAILURE) {
                 if (DEBUG) xil_printf("\n\rEnding processing -- ERROR EVALUATE SITUATION");
                 break;
             }
-
-            clear_screen();
 
             if (DEBUG) xil_printf("\n\n\rRestarting, iteration %d", iteration++);
 

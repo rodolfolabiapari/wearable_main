@@ -142,49 +142,46 @@ char send_distance_ble (float *distance, float *variance, float *sd)
     status = send_and_wait_confirmation_ble ((char) QUANT_SENSORS + 48);
     if (status == DEVICE_OFF) return XST_FAILURE;
 
-
+    status = 0;
+    xil_printf("\n");
     for (i = 0; i < QUANT_SENSORS; i++) {
-    	xil_printf("\r\nS%d - Dist:%d  V:%d  SD:%d", i, (int) distance[i], (int) variance[i], (int) sd[i]);
+    	if (status < i) status = i;
+
+    	xil_printf("\rS%d:%d - Dist:%d  V:%d  SD:%d        ", i, status, (int) distance[i], (int) variance[i], (int) sd[i]);
         // prepares buffer with question command
         buffer[0] = '\0';
-        sprintf((char *) buffer, "%03.2f", distance[i]);
+        sprintf((char *) buffer, "%03.01f", distance[i]);
         // sends the messenge question
         BLE_SendData(&ble_device, buffer, 6);
 
-        //xil_printf("Sending variance: \n\r");
+    	xil_printf("\rS%d:%d - Dist:%d  V:%d  SD:%d        ", i, status, (int) distance[i], (int) variance[i], (int) sd[i]);
 
         send_ble ('e');
-        xil_printf("\r");
-        send_ble ('a');
-        while(1);
         
-        //xil_printf("Variance: %d\n\r", (int) variance[i]);
+        //xil_printf("\n\rVariance: %d\n\r", (int) variance[i]);
+
         // prepares buffer with question command
         buffer[0] = '\0';
-        sprintf((char *) buffer, "%05.2f", variance[i]);
+        sprintf((char *) buffer, "%05.01f", variance[i]);
 
         // sends the messenge question
         BLE_SendData(&ble_device, buffer, 8);
 
-        //xil_printf("Sending sd: \n\r");
+    	xil_printf("\rS%d:%d - Dist:%d  V:%d  SD:%d        ", i, status, (int) distance[i], (int) variance[i], (int) sd[i]);
 
         send_ble ('e');
 
-
-    	//xil_printf("Distance: %d\n\r", (int) sd[i]);
-
         // prepares buffer with question comman
         buffer[0] = '\0';
-        sprintf((char *) buffer, "%03.2f", sd[i]);
+        sprintf((char *) buffer, "%03.01f", sd[i]);
 
         // sends the messenge question
         BLE_SendData(&ble_device, buffer, 6);
 
-        //xil_printf("Sending variance: \n\r");
+    	xil_printf("\rS%d:%d - Dist:%d  V:%d  SD:%d        ", i, status, (int) distance[i], (int) variance[i], (int) sd[i]);
 
     	send_ble (';');
 
-        //xil_printf("Done\n\r", buffer);
     }
 
     return XST_SUCCESS;
