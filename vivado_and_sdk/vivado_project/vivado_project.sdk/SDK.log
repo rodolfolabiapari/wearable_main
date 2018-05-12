@@ -4562,3 +4562,4 @@ con
 ----------------End of Script----------------
 
 17:16:57 INFO  : Launch script is exported to file '/home/kiev/Gits/wearable_project_main/vivado_and_sdk/vivado_project/vivado_project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sdk_project.elf_on_local.tcl'
+17:27:42 INFO  : Disconnected from the channel tcfchan#20.
