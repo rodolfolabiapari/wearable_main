@@ -88,6 +88,7 @@ int main (void)
     // GPIO structures;
     XGpio gpio_shield, gpio_led_switch;
     u8 reg_leds = 0;
+    unsigned int iteration = 0;
 
     // States variables
     u8 status;
@@ -124,9 +125,8 @@ int main (void)
         if (DEBUG) xil_printf("\rDevice is off. Use the SW0 to turn it on.   ");
 
     if (DEBUG) xil_printf("\rDEBUG MODE ON                       ");
-    if (DEBUG) xil_printf("\n\rStarting the system!\n");
+    if (DEBUG) xil_printf("\n\rStarting the system! Iteration %d\n", iterationi++);
 
-    print("asdfsdaf");
 
     while (is_device_on(&gpio_led_switch, &reg_leds) == DEVICE_ON) {
 
@@ -143,37 +143,32 @@ int main (void)
             status = send_distance_ble(avg, variance, sd);
 
             if (status == FAILURE) {
-                if (DEBUG) xil_printf(" Ending processing -- ERROR SEND DISTANCE\r\n");
+                if (DEBUG) xil_printf("\n\rEnding processing -- ERROR SEND DISTANCE\r\n");
+                break;
             }
 
             while(1);
             // Verifies the value received
-            if (DEBUG) xil_printf(" Verifying the safety\r\n|------");
+            if (DEBUG) xil_printf("\n\rVerifying the safety");
             situation = verify_safety_distance(distance, pos_circle_vec, safety_distance);
 
-            if (DEBUG) xil_printf(" Evaluating the situation\r\n|---");
+            if (DEBUG) xil_printf("\n\rEvaluating the situation");
             status = evaluate_situation(situation);
 
             if (status == FAILURE) {
-                if (DEBUG) xil_printf(" Ending processing -- ERROR EVALUATE SITUATION\r\n");
+                if (DEBUG) xil_printf("\n\rEnding processing -- ERROR EVALUATE SITUATION");
                 break;
             }
-            else
-                if (DEBUG) xil_printf(" Restating the evaluation\r\n");
 
             clear_screen();
 
-            if (DEBUG) xil_printf("DEBUG MODE ON\r\n");
-            if (DEBUG) xil_printf("Starting the system!\r\n");
-            if (DEBUG) xil_printf("|--- Stating BLE communication\r\n|---");
+            if (DEBUG) xil_printf("\n\n\rRestarting, iteration %d", iteration++);
 
         } while ((is_device_on(&gpio_led_switch, &reg_leds)
                 || is_ble_connected(&gpio_led_switch, &reg_leds)
                 ) == DEVICE_ON);
 
     }
-
-    if (DEBUG) xil_printf("\r");
 
     cleanup_platform();
 
