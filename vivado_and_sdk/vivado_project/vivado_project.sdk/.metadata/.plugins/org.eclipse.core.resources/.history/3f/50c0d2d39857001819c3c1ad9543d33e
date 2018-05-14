@@ -115,4 +115,5 @@ void measure_distance (XGpio *gpio_in, float dist[QUANT_SENSORS][SIZE_CIRCLE_VEC
     }
 
     calcule_stats(dist, *pos, avg, variance, sd);
+    xil_printf("%d\r\n", (int) avg[0]);
 }

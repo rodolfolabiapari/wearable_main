@@ -47,7 +47,7 @@ u32 request_pulse_hcsr04_sensor(XGpio * gpio_in) {
 
 void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd)
 {
-    float sum0 = 0, sum1 = 0, sum2 = 0;
+    static float sum0 = 0, sum1 = 0, sum2 = 0;
     int i = 0;
     int pos = pos_end;
 
@@ -109,10 +109,12 @@ void measure_distance (XGpio *gpio_in, float dist[QUANT_SENSORS][SIZE_CIRCLE_VEC
          dist[1][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
          dist[2][*pos] = (request_pulse_hcsr04_sensor(gpio_in) / CLOCKS_PER_uSECOND) / 58.0;
 
+         p_f(dist[0][*pos]);
          (*pos)++;
          if (*pos >= SIZE_CIRCLE_VEC)
         	 *pos = 0;
     }
 
     calcule_stats(dist, *pos, avg, variance, sd);
+    while(1);
 }

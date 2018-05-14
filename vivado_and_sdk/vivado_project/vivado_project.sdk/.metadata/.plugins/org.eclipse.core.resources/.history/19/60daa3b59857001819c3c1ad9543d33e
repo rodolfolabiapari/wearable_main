@@ -61,6 +61,9 @@ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float *
         sum2 += v[2][pos--];
     }
 
+    xil_printf("\n%d\r\n", (int) sum0);
+    while(1);
+
     // Calcules the avg
     avg[0] = sum0 / (TIMES_MEASURES);
     avg[1] = sum1 / (TIMES_MEASURES);
@@ -115,4 +118,5 @@ void measure_distance (XGpio *gpio_in, float dist[QUANT_SENSORS][SIZE_CIRCLE_VEC
     }
 
     calcule_stats(dist, *pos, avg, variance, sd);
+    xil_printf("%d\r\n", (int) avg[0]);
 }

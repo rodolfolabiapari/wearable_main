@@ -5261,3 +5261,448 @@ make: Nothing to be done for 'all'.
 17:16:55 **** Incremental Build of configuration Debug for project sdk_project ****
 make all 
 make: Nothing to be done for 'all'.
+13:52:20 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:153:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.01f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:153:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:153:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103456	   1568	   4416	 109440	  1ab80	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:52:50 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103612	   1568	   4420	 109600	  1ac20	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:52:59 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103580	   1568	   4420	 109568	  1ac00	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:53:02 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+13:54:00 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103564	   1568	   4420	 109552	  1abf0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:54:02 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+13:54:21 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103456	   1568	   4416	 109440	  1ab80	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:55:18 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103524	   1568	   4420	 109512	  1abc8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:55:21 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+13:56:01 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43504	   1440	   4400	  49344	   c0c0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:56:02 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+13:56:26 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43596	   1440	   4404	  49440	   c120	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:56:28 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+13:56:50 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43772	   1440	   4404	  49616	   c1d0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:56:52 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43760	   1440	   4400	  49600	   c1c0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:57:10 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103536	   1568	   4416	 109520	  1abd0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:57:25 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:153:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.01f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:153:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:153:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103524	   1568	   4420	 109512	  1abc8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:57:27 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+13:57:36 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+13:57:53 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:153:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.01f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:153:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:153:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103536	   1568	   4416	 109520	  1abd0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:57:58 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103456	   1568	   4416	 109440	  1ab80	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+13:58:04 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+14:01:49 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103536	   1568	   4416	 109520	  1abd0	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+14:01:56 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+14:02:55 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97808	   1564	   4420	 103792	  19570	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+14:02:59 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+14:03:08 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97788	   1564	   4416	 103768	  19558	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+14:03:23 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103500	   1568	   4412	 109480	  1aba8	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+14:03:29 **** Incremental Build of configuration Debug for project sdk_project ****
+make all 
+make: Nothing to be done for 'all'.
+14:04:13 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/distance_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distance_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distance_functions.d" -MT"src/distance_functions.o" -o "src/distance_functions.o" "../src/distance_functions.c"
+Finished building: ../src/distance_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103420	   1568	   4412	 109400	  1ab58	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+14:04:21 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103420	   1568	   4412	 109400	  1ab58	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 
+14:04:25 **** Auto Build of configuration Debug for project sdk_project ****
+make all 
+Building file: ../src/ble_functions.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ble_functions.o" -I../../sdk_project_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ble_functions.d" -MT"src/ble_functions.o" -o "src/ble_functions.o" "../src/ble_functions.c"
+../src/ble_functions.c: In function 'send_distance_ble':
+../src/ble_functions.c:153:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+         sprintf((char *) buffer, "%03.01f", distance[i]);
+         ^~~~~~~
+../src/ble_functions.c:153:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/ble_functions.c:153:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../src/ble_functions.c
+ 
+Building target: sdk_project.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk_project_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sdk_project.elf"  ./src/ble_functions.o ./src/distance_functions.o ./src/leds_switchs_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sdk_project.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size sdk_project.elf  |tee "sdk_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103420	   1568	   4412	 109400	  1ab58	sdk_project.elf
+Finished building: sdk_project.elf.size
+ 

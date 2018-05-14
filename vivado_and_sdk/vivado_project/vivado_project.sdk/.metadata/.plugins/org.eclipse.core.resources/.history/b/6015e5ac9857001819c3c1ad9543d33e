@@ -47,7 +47,7 @@ u32 request_pulse_hcsr04_sensor(XGpio * gpio_in) {
 
 void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float * avg, float * variance, float * sd)
 {
-    float sum0 = 0, sum1 = 0, sum2 = 0;
+    static float sum0 = 0, sum1 = 0, sum2 = 0;
     int i = 0;
     int pos = pos_end;
 
@@ -60,6 +60,9 @@ void calcule_stats(float v[QUANT_SENSORS][SIZE_CIRCLE_VEC], int pos_end, float *
         sum1 += v[1][pos];
         sum2 += v[2][pos--];
     }
+
+    xil_printf("\n%d\r\n", (int) sum0);
+    while(1);
 
     // Calcules the avg
     avg[0] = sum0 / (TIMES_MEASURES);
@@ -115,4 +118,5 @@ void measure_distance (XGpio *gpio_in, float dist[QUANT_SENSORS][SIZE_CIRCLE_VEC
     }
 
     calcule_stats(dist, *pos, avg, variance, sd);
+    xil_printf("%d\r\n", (int) avg[0]);
 }
