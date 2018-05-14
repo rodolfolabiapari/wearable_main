@@ -12,7 +12,7 @@ key = 1
 
 def read_char():
 	info = rf.read()
-	print (info, end='')
+	#print (info, end='')
 	return info
 
 def read_float():
@@ -71,7 +71,7 @@ def listen():
 			situation = read_char()
 			write_char('1')
 
-			print ('Key:'+ `key` + '  D|V|SD:' + ' '.join(distances) + '|'  + ' '.join(variances) +  '|'  + ' '.join(sds) + 'cm  \n|---Sts:' + situation + '   Dt:' + str(time.ctime())[8:19] + '   (0) Exit (2) Stop')
+			print ('Key:'+ `key` + '  D|V|SD:' + ' '.join(distances) + '|'  + ' '.join(variances) +  '|'  + ' '.join(sds) + 'cm  \n    Sts:' + situation + '   Dt:' + str(time.ctime())[8:19] + '   (0) Exit (2) Stop')
 	print ('Closing read thread')
 	
 if (len(sys.argv) == 4):

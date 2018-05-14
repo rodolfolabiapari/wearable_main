@@ -35,7 +35,7 @@ typedef XUartLite SysUart;
  */
 void starting_ble_communication ();
 
-char send_ble (char messenge);
+void send_ble (char messenge);
 char send_and_wait_confirmation_ble (char messenge);
 char send_and_wait_response_ble (char messenge);
 char send_distance_ble (float *distance, float *variance, float *sd);

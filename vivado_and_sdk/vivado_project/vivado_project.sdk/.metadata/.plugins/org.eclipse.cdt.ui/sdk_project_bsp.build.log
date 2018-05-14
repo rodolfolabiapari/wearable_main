@@ -1,4 +1,4 @@
-11:55:32 **** Build of project sdk_project_bsp ****
+16:34:44 **** Build of project sdk_project_bsp ****
 make -k all 
 Running Make include in microblaze_0/libsrc/cpu_v2_6/src
 make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -43,5 +43,5 @@ make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=m
 Compiling tmrctr
 Finished building libraries
 
-11:55:36 Build Finished (took 4s.765ms)
+16:34:48 Build Finished (took 3s.666ms)
 
