@@ -46,7 +46,7 @@ void starting_ble_communication ()
 }
 
 
-void send_ble (char messenge)
+char send_ble (char messenge)
 {
     u8 buffer [1];
 
@@ -54,7 +54,7 @@ void send_ble (char messenge)
     buffer[0] = messenge;
 
     // sends the messenge question
-    BLE_SendData(&ble_device, buffer, 1);
+    return BLE_SendData(&ble_device, buffer, 1);
 }
 
 
@@ -85,18 +85,19 @@ char send_and_wait_confirmation_ble (char messenge)
     // change the buffer to trash
     buffer[0] = 'g';
 
+    status = 0;
     do {
     	time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
 
-		// Calcules the pulse duration by the formula below
-		pulse_duration = (time) / CLOCKS_PER_SECOND;
+        // Calcules the pulse duration by the formula below
+        pulse_duration = (time) / CLOCKS_PER_SECOND;
 
-		//if (DEBUG) xil_printf("Waiting BLE connection      %c      \r", buffer[0]);
-		if (pulse_duration > WAIT_ANSWER_TIME)
-			return DEVICE_OFF;
+        //if (DEBUG) xil_printf("Waiting BLE connection      %c      \r", buffer[0]);
+        if (pulse_duration > WAIT_ANSWER_TIME)
+            return DEVICE_OFF;
 
-		BLE_RecvData(&ble_device, buffer, 1);
-    } while (buffer[0] != '1') ;
+        status = BLE_RecvData(&ble_device, buffer, 1);
+    } while (status != 1 || buffer[0] != '1') ;
 
     // Stops the pulse calculation
     XTmrCtr_Stop(&TimerCounter, TIMER_COUNTER_0);
@@ -156,7 +157,8 @@ char send_distance_ble (float *distance, float *variance, float *sd)
 
     	xil_printf("\rS%d:%d - Dist:%d  V:%d  SD:%d        ", i, status, (int) distance[i], (int) variance[i], (int) sd[i]);
 
-        send_ble ('e');
+        status = send_ble ('e');
+        if (status != 1) return XST_FAILURE;
         
         //xil_printf("\n\rVariance: %d\n\r", (int) variance[i]);
 
@@ -169,7 +171,8 @@ char send_distance_ble (float *distance, float *variance, float *sd)
 
     	xil_printf("\rS%d:%d - Dist:%d  V:%d  SD:%d        ", i, status, (int) distance[i], (int) variance[i], (int) sd[i]);
 
-        send_ble ('e');
+        status = send_ble ('e');
+        if (status != 1) return XST_FAILURE;
 
         // prepares buffer with question comman
         buffer[0] = '\0';
@@ -180,7 +183,8 @@ char send_distance_ble (float *distance, float *variance, float *sd)
 
     	xil_printf("\rS%d:%d - Dist:%d  V:%d  SD:%d        ", i, status, (int) distance[i], (int) variance[i], (int) sd[i]);
 
-    	send_ble (';');
+        status = send_ble (';');
+        if (status != 1) return XST_FAILURE;
 
     }
 
